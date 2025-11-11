@@ -3,7 +3,9 @@ import { useRef, useCallback } from 'react';
 const AudioManager = () => {
   const audioRef = useRef(null);
 
-  const playSound = useCallback((type, perguntaId) => {
+  const playSound = useCallback((type, perguntaId, isMuted = false) => {
+    if (isMuted) return;
+    
     const audioFiles = {
       inicio: '/audio/inicio.mp3',
       pergunta1: '/audio/pergunta1.mp3',

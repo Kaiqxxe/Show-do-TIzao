@@ -131,26 +131,36 @@ const Game = ({ perguntas, onGameEnd, playSound }) => {
             />
 
             {showDica && (
-              <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mt-4 rounded">
-                <p className="text-yellow-800">
-                  <strong>💡 Dica:</strong> {getDica()}
+              <div className="bg-blue-50 border border-blue-200 p-6 mt-6 rounded-xl shadow-lg">
+                <p className="text-blue-800 text-lg font-medium">
+                  <strong className="text-blue-600">Dica:</strong> {getDica()}
                 </p>
               </div>
             )}
 
             {showConfirm && (
-              <div className="text-center mt-6 space-x-4">
+              <div className="text-center mt-8 space-x-6">
                 <button
                   onClick={handleConfirm}
-                  className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all"
+                  className="bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-10 rounded-xl text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  ✅ Confirmar Resposta
+                  <span className="flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Confirmar Resposta
+                  </span>
                 </button>
                 <button
                   onClick={handleChangeAnswer}
-                  className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-10 rounded-xl text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  🔄 Trocar Alternativa
+                  <span className="flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clipRule="evenodd" />
+                    </svg>
+                    Trocar Alternativa
+                  </span>
                 </button>
               </div>
             )}
@@ -171,9 +181,14 @@ const Game = ({ perguntas, onGameEnd, playSound }) => {
 
             <button
               onClick={() => onGameEnd(false, currentQuestionIndex > 0 ? perguntas[currentQuestionIndex - 1].valor : 0)}
-              className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-lg transition-all"
+              className="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-4 px-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-102"
             >
-              🚪 Desistir
+              <span className="flex items-center gap-2">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clipRule="evenodd" />
+                </svg>
+                Desistir
+              </span>
             </button>
           </div>
         </div>
