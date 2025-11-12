@@ -3,7 +3,7 @@ import Question from '../components/Question';
 import Lifelines from '../components/Lifelines';
 import ScoreBoard from '../components/ScoreBoard';
 
-const Game = ({ perguntas, onGameEnd, playSound }) => {
+const Game = ({ perguntas, onGameEnd, onQuitToMenu, playSound }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showConfirm, setShowConfirm] = useState(false);
@@ -14,13 +14,15 @@ const Game = ({ perguntas, onGameEnd, playSound }) => {
   });
   const [eliminatedOptions, setEliminatedOptions] = useState([]);
   const [showDica, setShowDica] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
 
   const currentQuestion = perguntas[currentQuestionIndex];
   const currentPrize = currentQuestion?.valor || 0;
 
   useEffect(() => {
     if (currentQuestion) {
-      playSound('pergunta', currentQuestion.id);
+      const questionNumber = currentQuestionIndex + 1;
+      playSound('pergunta', questionNumber);
     }
   }, [currentQuestionIndex, playSound, currentQuestion]);
 
@@ -32,6 +34,9 @@ const Game = ({ perguntas, onGameEnd, playSound }) => {
   };
 
   const handleConfirm = () => {
+    if (isProcessing) return;
+    setIsProcessing(true);
+    
     const isCorrect = selectedAnswer === currentQuestion.correta;
     
     if (isCorrect) {
@@ -46,6 +51,7 @@ const Game = ({ perguntas, onGameEnd, playSound }) => {
           setShowConfirm(false);
           setEliminatedOptions([]);
           setShowDica(false);
+          setIsProcessing(false);
         }
       }, 2000);
     } else {
@@ -108,7 +114,107 @@ const Game = ({ perguntas, onGameEnd, playSound }) => {
       7: "Divide o problema pela metade a cada iteração.",
       8: "Novidade do React 16.8 que revolucionou componentes funcionais.",
       9: "Tecnologia que empacota aplicações em containers.",
-      10: "Garante que só existe uma instância da classe."
+      10: "Garante que só existe uma instância da classe.",
+      11: "Usado para dar estilo e aparência às páginas web.",
+      12: "Porta padrão para navegação web não segura.",
+      13: "Função básica para exibir informações na tela.",
+      14: "Ambiente integrado para desenvolvimento de software.",
+      15: "Extensão padrão para arquivos desta linguagem web.",
+      16: "Interface que permite comunicação entre aplicações.",
+      17: "Gerenciador de pacotes do Node.js.",
+      18: "Criado por Brendan Eich na Netscape.",
+      19: "Formato leve para intercâmbio de dados.",
+      20: "Sistema criado por Linus Torvalds.",
+      21: "Estrutura que facilita o desenvolvimento de aplicações.",
+      22: "Linguagem que domina o desenvolvimento web frontend.",
+      23: "Endereço único de recursos na internet.",
+      24: "Porta padrão para navegação web segura.",
+      25: "Conceito fundamental da programação orientada a objetos.",
+      26: "Sequência lógica de passos para resolver um problema.",
+      27: "Comando para visualizar histórico de mudanças.",
+      28: "Erro ou defeito no código de um programa.",
+      29: "Banco de dados orientado a documentos.",
+      30: "Representação em árvore dos elementos HTML.",
+      31: "Linguagem para definir a apresentação de documentos.",
+      32: "Estrutura de dados que armazena múltiplos valores.",
+      33: "Linguagem mais popular para desenvolvimento web.",
+      34: "Técnica onde uma função chama a si mesma.",
+      35: "Criador do kernel Linux.",
+      36: "Traduz código fonte para código executável.",
+      37: "Protocolo para transferência de arquivos.",
+      38: "Memória de acesso aleatório do computador.",
+      39: "=== verifica tipo e valor, == só valor.",
+      40: "Computador que fornece recursos para outros.",
+      41: "APIs REST são stateless por natureza.",
+      42: "Notação para analisar eficiência de algoritmos.",
+      43: "No pior caso, QuickSort tem performance quadrática.",
+      44: "Situação onde processos ficam travados esperando recursos.",
+      45: "Capacidade de usar a mesma interface para diferentes tipos.",
+      46: "Last In, First Out - último a entrar, primeiro a sair.",
+      47: "Princípio de ocultar detalhes internos de implementação.",
+      48: "Protocolo para envio de emails.",
+      49: "Estrutura que mapeia chaves para valores.",
+      50: "HTTPS adiciona criptografia ao HTTP.",
+      51: "IA que aprende padrões a partir de dados.",
+      52: "Comando para criar uma nova ramificação.",
+      53: "Computação distribuída via internet.",
+      54: "NoSQL escala horizontalmente melhor que SQL.",
+      55: "Cultura que integra desenvolvimento e operações.",
+      56: "Padrão que notifica observadores sobre mudanças.",
+      57: "Arquitetura de aplicações pequenas e independentes.",
+      58: "GET busca dados, POST envia dados.",
+      59: "Callback HTTP automático para eventos.",
+      60: "Funções são tratadas como valores de primeira classe.",
+      61: "Integração e entrega contínuas.",
+      62: "Comando para desfazer um commit específico.",
+      63: "Rede de distribuição de conteúdo.",
+      64: "SQL é relacional, NoSQL é não-relacional.",
+      65: "Distribui carga entre múltiplos servidores.",
+      66: "Padrão que separa Model, View e Controller.",
+      67: "Mapeia objetos para tabelas relacionais.",
+      68: "Docker isola aplicações em containers portáteis.",
+      69: "Linguagem de consulta flexível para APIs.",
+      70: "Threads compartilham memória, processos não.",
+      71: "Orquestrador de containers em produção.",
+      72: "Git suporta múltiplos protocolos de comunicação.",
+      73: "Soluções reutilizáveis para problemas recorrentes.",
+      74: "Compilação traduz antes, interpretação durante execução.",
+      75: "Software que conecta diferentes componentes.",
+      76: "REST não mantém estado entre requisições.",
+      77: "Armazenamento temporário para acesso rápido.",
+      78: "var tem escopo de função, let/const têm escopo de bloco.",
+      79: "Função passada como parâmetro para outra função.",
+      80: "async/await é sintaxe mais limpa para Promises.",
+      81: "Função que 'lembra' do escopo onde foi criada.",
+      82: "Comando para unir branches no Git.",
+      83: "Metodologia que escreve testes antes do código.",
+      84: "Unit testa isoladamente, integration testa integração.",
+      85: "Melhora código sem alterar funcionalidade.",
+      86: "TypeScript adiciona tipos estáticos ao JavaScript.",
+      87: "Representação virtual do DOM em memória.",
+      88: "INNER, LEFT, RIGHT, FULL - diferentes formas de unir tabelas.",
+      89: "Processo de organizar dados para reduzir redundância.",
+      90: "HTTP/2 permite múltiplas requisições simultâneas.",
+      91: "Condição onde threads competem por recursos compartilhados.",
+      92: "Stack é rápida e automática, heap é flexível e manual.",
+      93: "Gerenciamento automático de memória não utilizada.",
+      94: "Cria objetos sem especificar a classe concreta.",
+      95: "Mecanismo que gerencia execução assíncrona em JavaScript.",
+      96: "Microserviços permitem escalabilidade independente.",
+      97: "Cinco princípios para design de software limpo.",
+      98: "TCP garante entrega, UDP prioriza velocidade.",
+      99: "Teorema sobre trade-offs em sistemas distribuídos.",
+      100: "Merge Sort sempre mantém complexidade O(n log n).",
+      101: "Tecnologia de registro imutável e distribuído.",
+      102: "IPv6 resolve o problema de escassez de endereços.",
+      103: "Caracterizado por volume, velocidade e variedade.",
+      104: "Permite trocar algoritmos dinamicamente.",
+      105: "Consistência alcançada após propagação em sistemas distribuídos.",
+      106: "LEFT JOIN inclui todos registros da tabela esquerda.",
+      107: "Divisão horizontal de dados entre múltiplos servidores.",
+      108: "Authentication identifica, authorization autoriza.",
+      109: "Paradigma para processamento paralelo de grandes datasets.",
+      110: "Responde a eventos e mudanças de forma assíncrona."
     };
     return dicas[currentQuestion.id] || "Pense bem na resposta!";
   };
@@ -142,7 +248,12 @@ const Game = ({ perguntas, onGameEnd, playSound }) => {
               <div className="text-center mt-8 space-x-6">
                 <button
                   onClick={handleConfirm}
-                  className="bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-10 rounded-xl text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  disabled={isProcessing}
+                  className={`font-semibold py-4 px-10 rounded-xl text-lg transition-all duration-200 shadow-lg ${
+                    isProcessing 
+                      ? 'bg-gray-400 cursor-not-allowed text-white'
+                      : 'bg-red-600 hover:bg-red-700 text-white hover:shadow-xl transform hover:scale-105'
+                  }`}
                 >
                   <span className="flex items-center gap-2">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -180,7 +291,7 @@ const Game = ({ perguntas, onGameEnd, playSound }) => {
             />
 
             <button
-              onClick={() => onGameEnd(false, currentQuestionIndex > 0 ? perguntas[currentQuestionIndex - 1].valor : 0)}
+              onClick={onQuitToMenu}
               className="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-4 px-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-102"
             >
               <span className="flex items-center gap-2">
