@@ -3,12 +3,12 @@
     "id": 1,
     "pergunta": "Qual linguagem é executada no navegador?",
     "alternativas": {
-      "A": "Python",
-      "B": "JavaScript",
+      "A": "PHP",
+      "B": "Python",
       "C": "C++",
-      "D": "PHP"
+      "D": "JavaScript"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "fácil"
   },
   {
@@ -28,9 +28,9 @@
     "pergunta": "Qual é o protocolo padrão para páginas web seguras?",
     "alternativas": {
       "A": "HTTP",
-      "B": "FTP",
+      "B": "SSH",
       "C": "HTTPS",
-      "D": "SSH"
+      "D": "FTP"
     },
     "correta": "C",
     "nivel": "médio"
@@ -39,60 +39,60 @@
     "id": 4,
     "pergunta": "Em programação, o que é um loop?",
     "alternativas": {
-      "A": "Um erro no código",
-      "B": "Uma estrutura de repetição",
-      "C": "Um tipo de variável",
-      "D": "Uma função matemática"
+      "A": "Um tipo de variável",
+      "B": "Uma função matemática",
+      "C": "Uma estrutura de repetição",
+      "D": "Um erro no código"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "médio"
   },
   {
     "id": 5,
     "pergunta": "Qual comando Git é usado para clonar um repositório?",
     "alternativas": {
-      "A": "git copy",
-      "B": "git download",
-      "C": "git clone",
-      "D": "git pull"
+      "A": "git clone",
+      "B": "git pull",
+      "C": "git copy",
+      "D": "git download"
     },
-    "correta": "C",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 6,
     "pergunta": "O que é SQL?",
     "alternativas": {
-      "A": "Structured Query Language",
-      "B": "Simple Question Language",
-      "C": "System Quality Language",
-      "D": "Standard Query Logic"
+      "A": "Standard Query Logic",
+      "B": "Structured Query Language",
+      "C": "Simple Question Language",
+      "D": "System Quality Language"
     },
-    "correta": "A",
+    "correta": "B",
     "nivel": "difícil"
   },
   {
     "id": 7,
     "pergunta": "Qual é a complexidade de tempo do algoritmo de busca binária?",
     "alternativas": {
-      "A": "O(n)",
-      "B": "O(log n)",
+      "A": "O(log n)",
+      "B": "O(1)",
       "C": "O(n²)",
-      "D": "O(1)"
+      "D": "O(n)"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "difícil"
   },
   {
     "id": 8,
     "pergunta": "Em React, o que são Hooks?",
     "alternativas": {
-      "A": "Funções que permitem usar estado em componentes funcionais",
+      "A": "Métodos de renderização",
       "B": "Componentes de classe especiais",
       "C": "Bibliotecas externas",
-      "D": "Métodos de renderização"
+      "D": "Funções que permitem usar estado em componentes funcionais"
     },
-    "correta": "A",
+    "correta": "D",
     "nivel": "difícil"
   },
   {
@@ -100,69 +100,69 @@
     "pergunta": "O que é Docker?",
     "alternativas": {
       "A": "Uma linguagem de programação",
-      "B": "Um banco de dados",
-      "C": "Uma plataforma de containerização",
+      "B": "Uma plataforma de containerização",
+      "C": "Um banco de dados",
       "D": "Um framework web"
     },
-    "correta": "C",
+    "correta": "B",
     "nivel": "difícil"
   },
   {
     "id": 10,
     "pergunta": "Qual padrão de design é usado para criar uma única instância de uma classe?",
     "alternativas": {
-      "A": "Factory",
-      "B": "Observer",
-      "C": "Singleton",
-      "D": "Strategy"
+      "A": "Observer",
+      "B": "Strategy",
+      "C": "Factory",
+      "D": "Singleton"
     },
-    "correta": "C",
+    "correta": "D",
     "nivel": "muito difícil"
   },
   {
     "id": 11,
     "pergunta": "O que significa CSS?",
     "alternativas": {
-      "A": "Computer Style Sheets",
-      "B": "Cascading Style Sheets",
+      "A": "Cascading Style Sheets",
+      "B": "Computer Style Sheets",
       "C": "Creative Style System",
       "D": "Code Style Structure"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "fácil"
   },
   {
     "id": 12,
     "pergunta": "Qual é a porta padrão do HTTP?",
     "alternativas": {
-      "A": "21",
-      "B": "22",
-      "C": "80",
-      "D": "443"
+      "A": "443",
+      "B": "80",
+      "C": "21",
+      "D": "22"
     },
-    "correta": "C",
+    "correta": "B",
     "nivel": "fácil"
   },
   {
     "id": 13,
     "pergunta": "Em Python, qual função é usada para imprimir na tela?",
     "alternativas": {
-      "A": "echo()",
-      "B": "print()",
+      "A": "print()",
+      "B": "echo()",
       "C": "console.log()",
       "D": "printf()"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "fácil"
   },
   {
     "id": 14,
     "pergunta": "O que é um IDE?",
     "alternativas": {
-      "A": "Internet Development Environment",
+      "A": "Internal Data Engine",
       "B": "Integrated Development Environment",
       "C": "Interactive Design Editor",
-      "D": "Internal Data Engine"
+      "D": "Internet Development Environment"
     },
     "correta": "B",
     "nivel": "fácil"
@@ -171,10 +171,10 @@
     "id": 15,
     "pergunta": "Qual extensão têm os arquivos JavaScript?",
     "alternativas": {
-      "A": ".java",
+      "A": ".json",
       "B": ".jsx",
       "C": ".js",
-      "D": ".json"
+      "D": ".java"
     },
     "correta": "C",
     "nivel": "fácil"
@@ -183,12 +183,12 @@
     "id": 16,
     "pergunta": "O que significa API?",
     "alternativas": {
-      "A": "Application Programming Interface",
+      "A": "Automated Program Instruction",
       "B": "Advanced Programming Integration",
-      "C": "Automated Program Instruction",
-      "D": "Application Process Interface"
+      "C": "Application Process Interface",
+      "D": "Application Programming Interface"
     },
-    "correta": "A",
+    "correta": "D",
     "nivel": "médio"
   },
   {
@@ -196,56 +196,56 @@
     "pergunta": "Qual comando é usado para instalar pacotes no Node.js?",
     "alternativas": {
       "A": "install",
-      "B": "npm install",
+      "B": "get package",
       "C": "node install",
-      "D": "get package"
+      "D": "npm install"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "médio"
   },
   {
     "id": 18,
     "pergunta": "Em que ano foi criado o JavaScript?",
     "alternativas": {
-      "A": "1993",
-      "B": "1995",
-      "C": "1997",
-      "D": "1999"
+      "A": "1997",
+      "B": "1993",
+      "C": "1999",
+      "D": "1995"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "médio"
   },
   {
     "id": 19,
     "pergunta": "O que é JSON?",
     "alternativas": {
-      "A": "JavaScript Object Notation",
+      "A": "Java Script Object Name",
       "B": "Java Standard Object Network",
-      "C": "JavaScript Online Network",
-      "D": "Java Script Object Name"
+      "C": "JavaScript Object Notation",
+      "D": "JavaScript Online Network"
     },
-    "correta": "A",
+    "correta": "C",
     "nivel": "médio"
   },
   {
     "id": 20,
     "pergunta": "Qual é o sistema de controle de versão mais usado?",
     "alternativas": {
-      "A": "SVN",
-      "B": "Git",
-      "C": "Mercurial",
+      "A": "Mercurial",
+      "B": "SVN",
+      "C": "Git",
       "D": "CVS"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "médio"
   },
   {
     "id": 21,
     "pergunta": "O que é um framework?",
     "alternativas": {
-      "A": "Um tipo de banco de dados",
+      "A": "Um protocolo de rede",
       "B": "Uma estrutura de desenvolvimento",
-      "C": "Um protocolo de rede",
+      "C": "Um tipo de banco de dados",
       "D": "Um sistema operacional"
     },
     "correta": "B",
@@ -255,48 +255,48 @@
     "id": 22,
     "pergunta": "Qual linguagem é conhecida como 'a linguagem da web'?",
     "alternativas": {
-      "A": "Python",
-      "B": "Java",
-      "C": "JavaScript",
-      "D": "C++"
+      "A": "C++",
+      "B": "Python",
+      "C": "Java",
+      "D": "JavaScript"
     },
-    "correta": "C",
+    "correta": "D",
     "nivel": "fácil"
   },
   {
     "id": 23,
     "pergunta": "O que significa URL?",
     "alternativas": {
-      "A": "Universal Resource Locator",
-      "B": "Uniform Resource Locator",
-      "C": "Universal Reference Link",
-      "D": "Uniform Reference Locator"
+      "A": "Uniform Reference Locator",
+      "B": "Universal Reference Link",
+      "C": "Universal Resource Locator",
+      "D": "Uniform Resource Locator"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "fácil"
   },
   {
     "id": 24,
     "pergunta": "Qual é a porta padrão do HTTPS?",
     "alternativas": {
-      "A": "80",
-      "B": "443",
-      "C": "8080",
+      "A": "8080",
+      "B": "80",
+      "C": "443",
       "D": "3000"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "médio"
   },
   {
     "id": 25,
     "pergunta": "Em programação orientada a objetos, o que é herança?",
     "alternativas": {
-      "A": "Criar múltiplas instâncias",
-      "B": "Reutilizar código de uma classe pai",
+      "A": "Reutilizar código de uma classe pai",
+      "B": "Criar múltiplas instâncias",
       "C": "Esconder dados privados",
       "D": "Executar métodos em paralelo"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "médio"
   },
   {
@@ -304,47 +304,47 @@
     "pergunta": "O que é um algoritmo?",
     "alternativas": {
       "A": "Um tipo de variável",
-      "B": "Uma sequência de instruções",
-      "C": "Um banco de dados",
-      "D": "Um protocolo de rede"
+      "B": "Um banco de dados",
+      "C": "Um protocolo de rede",
+      "D": "Uma sequência de instruções"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "fácil"
   },
   {
     "id": 27,
     "pergunta": "Qual comando Git é usado para ver o histórico de commits?",
     "alternativas": {
-      "A": "git history",
-      "B": "git log",
-      "C": "git show",
+      "A": "git log",
+      "B": "git show",
+      "C": "git history",
       "D": "git commits"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 28,
     "pergunta": "O que é um bug em programação?",
     "alternativas": {
-      "A": "Um recurso novo",
-      "B": "Um erro no código",
-      "C": "Uma otimização",
-      "D": "Um comentário"
+      "A": "Um comentário",
+      "B": "Uma otimização",
+      "C": "Um erro no código",
+      "D": "Um recurso novo"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "fácil"
   },
   {
     "id": 29,
     "pergunta": "Qual é o banco de dados NoSQL mais popular?",
     "alternativas": {
-      "A": "MySQL",
+      "A": "Oracle",
       "B": "PostgreSQL",
-      "C": "MongoDB",
-      "D": "Oracle"
+      "C": "MySQL",
+      "D": "MongoDB"
     },
-    "correta": "C",
+    "correta": "D",
     "nivel": "médio"
   },
   {
@@ -352,9 +352,9 @@
     "pergunta": "O que significa DOM?",
     "alternativas": {
       "A": "Document Object Model",
-      "B": "Data Object Management",
-      "C": "Dynamic Object Method",
-      "D": "Document Operation Mode"
+      "B": "Document Operation Mode",
+      "C": "Data Object Management",
+      "D": "Dynamic Object Method"
     },
     "correta": "A",
     "nivel": "médio"
@@ -363,12 +363,12 @@
     "id": 31,
     "pergunta": "Qual linguagem é usada para estilizar páginas web?",
     "alternativas": {
-      "A": "HTML",
+      "A": "PHP",
       "B": "JavaScript",
-      "C": "CSS",
-      "D": "PHP"
+      "C": "HTML",
+      "D": "CSS"
     },
-    "correta": "C",
+    "correta": "D",
     "nivel": "fácil"
   },
   {
@@ -399,118 +399,118 @@
     "id": 34,
     "pergunta": "O que é recursão?",
     "alternativas": {
-      "A": "Uma função que chama a si mesma",
+      "A": "Um protocolo de rede",
       "B": "Um tipo de variável",
-      "C": "Um protocolo de rede",
+      "C": "Uma função que chama a si mesma",
       "D": "Um sistema operacional"
     },
-    "correta": "A",
+    "correta": "C",
     "nivel": "médio"
   },
   {
     "id": 35,
     "pergunta": "Qual é o criador do Linux?",
     "alternativas": {
-      "A": "Bill Gates",
-      "B": "Steve Jobs",
-      "C": "Linus Torvalds",
-      "D": "Mark Zuckerberg"
+      "A": "Linus Torvalds",
+      "B": "Mark Zuckerberg",
+      "C": "Bill Gates",
+      "D": "Steve Jobs"
     },
-    "correta": "C",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 36,
     "pergunta": "O que é um compilador?",
     "alternativas": {
-      "A": "Um editor de texto",
-      "B": "Um programa que traduz código",
+      "A": "Um programa que traduz código",
+      "B": "Um navegador web",
       "C": "Um banco de dados",
-      "D": "Um navegador web"
+      "D": "Um editor de texto"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 37,
     "pergunta": "Qual protocolo é usado para transferir arquivos?",
     "alternativas": {
-      "A": "HTTP",
-      "B": "FTP",
-      "C": "SMTP",
-      "D": "DNS"
+      "A": "FTP",
+      "B": "DNS",
+      "C": "HTTP",
+      "D": "SMTP"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 38,
     "pergunta": "O que significa RAM?",
     "alternativas": {
-      "A": "Random Access Memory",
-      "B": "Read Access Memory",
-      "C": "Rapid Access Module",
-      "D": "Remote Access Memory"
+      "A": "Rapid Access Module",
+      "B": "Remote Access Memory",
+      "C": "Read Access Memory",
+      "D": "Random Access Memory"
     },
-    "correta": "A",
+    "correta": "D",
     "nivel": "fácil"
   },
   {
     "id": 39,
     "pergunta": "Qual é a diferença entre == e === em JavaScript?",
     "alternativas": {
-      "A": "Não há diferença",
-      "B": "=== compara tipo e valor",
-      "C": "== é mais rápido",
-      "D": "=== só funciona com números"
+      "A": "== é mais rápido",
+      "B": "=== só funciona com números",
+      "C": "Não há diferença",
+      "D": "=== compara tipo e valor"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "médio"
   },
   {
     "id": 40,
     "pergunta": "O que é um servidor?",
     "alternativas": {
-      "A": "Um programa cliente",
-      "B": "Um computador que fornece serviços",
-      "C": "Um tipo de banco de dados",
-      "D": "Uma linguagem de programação"
+      "A": "Uma linguagem de programação",
+      "B": "Um tipo de banco de dados",
+      "C": "Um programa cliente",
+      "D": "Um computador que fornece serviços"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "fácil"
   },
   {
     "id": 41,
     "pergunta": "Qual é o padrão de arquitetura mais usado em APIs REST?",
     "alternativas": {
-      "A": "MVC",
-      "B": "MVP",
-      "C": "MVVM",
-      "D": "Stateless"
+      "A": "Stateless",
+      "B": "MVVM",
+      "C": "MVC",
+      "D": "MVP"
     },
-    "correta": "D",
+    "correta": "A",
     "nivel": "difícil"
   },
   {
     "id": 42,
     "pergunta": "O que é Big O notation?",
     "alternativas": {
-      "A": "Uma linguagem de programação",
-      "B": "Uma forma de medir complexidade",
-      "C": "Um tipo de banco de dados",
-      "D": "Um protocolo de rede"
+      "A": "Um tipo de banco de dados",
+      "B": "Um protocolo de rede",
+      "C": "Uma forma de medir complexidade",
+      "D": "Uma linguagem de programação"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
     "id": 43,
     "pergunta": "Qual é a complexidade do algoritmo QuickSort no pior caso?",
     "alternativas": {
-      "A": "O(n)",
-      "B": "O(n log n)",
+      "A": "O(log n)",
+      "B": "O(n)",
       "C": "O(n²)",
-      "D": "O(log n)"
+      "D": "O(n log n)"
     },
     "correta": "C",
     "nivel": "difícil"
@@ -519,9 +519,9 @@
     "id": 44,
     "pergunta": "O que é um deadlock?",
     "alternativas": {
-      "A": "Um tipo de loop infinito",
+      "A": "Um erro de sintaxe",
       "B": "Quando processos ficam bloqueados esperando recursos",
-      "C": "Um erro de sintaxe",
+      "C": "Um tipo de loop infinito",
       "D": "Uma técnica de otimização"
     },
     "correta": "B",
@@ -531,120 +531,120 @@
     "id": 45,
     "pergunta": "O que é polimorfismo?",
     "alternativas": {
-      "A": "Criar múltiplas classes",
-      "B": "Usar a mesma interface para diferentes tipos",
+      "A": "Usar a mesma interface para diferentes tipos",
+      "B": "Herdar de múltiplas classes",
       "C": "Esconder implementação",
-      "D": "Herdar de múltiplas classes"
+      "D": "Criar múltiplas classes"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "difícil"
   },
   {
     "id": 46,
     "pergunta": "Qual estrutura de dados usa LIFO?",
     "alternativas": {
-      "A": "Queue",
-      "B": "Stack",
-      "C": "Array",
-      "D": "Tree"
+      "A": "Array",
+      "B": "Tree",
+      "C": "Queue",
+      "D": "Stack"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "médio"
   },
   {
     "id": 47,
     "pergunta": "O que é encapsulamento?",
     "alternativas": {
-      "A": "Criar objetos",
-      "B": "Esconder detalhes internos",
+      "A": "Executar em paralelo",
+      "B": "Criar objetos",
       "C": "Herdar propriedades",
-      "D": "Executar em paralelo"
+      "D": "Esconder detalhes internos"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "médio"
   },
   {
     "id": 48,
     "pergunta": "Qual é o protocolo usado para email?",
     "alternativas": {
-      "A": "HTTP",
-      "B": "FTP",
-      "C": "SMTP",
+      "A": "SMTP",
+      "B": "HTTP",
+      "C": "FTP",
       "D": "TCP"
     },
-    "correta": "C",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 49,
     "pergunta": "O que é um hash table?",
     "alternativas": {
-      "A": "Uma lista ordenada",
-      "B": "Uma estrutura de dados chave-valor",
-      "C": "Um tipo de árvore",
-      "D": "Uma pilha"
+      "A": "Um tipo de árvore",
+      "B": "Uma lista ordenada",
+      "C": "Uma pilha",
+      "D": "Uma estrutura de dados chave-valor"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "médio"
   },
   {
     "id": 50,
     "pergunta": "Qual é a diferença entre HTTP e HTTPS?",
     "alternativas": {
-      "A": "HTTPS é mais rápido",
-      "B": "HTTPS é criptografado",
-      "C": "HTTP é mais seguro",
+      "A": "HTTPS é criptografado",
+      "B": "HTTP é mais seguro",
+      "C": "HTTPS é mais rápido",
       "D": "Não há diferença"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "fácil"
   },
   {
     "id": 51,
     "pergunta": "O que é machine learning?",
     "alternativas": {
-      "A": "Programação de máquinas",
-      "B": "Algoritmos que aprendem com dados",
-      "C": "Manutenção de computadores",
-      "D": "Linguagem de máquina"
+      "A": "Algoritmos que aprendem com dados",
+      "B": "Manutenção de computadores",
+      "C": "Linguagem de máquina",
+      "D": "Programação de máquinas"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 52,
     "pergunta": "Qual é o comando para criar uma branch no Git?",
     "alternativas": {
-      "A": "git new branch",
-      "B": "git branch",
-      "C": "git create",
-      "D": "git make branch"
+      "A": "git make branch",
+      "B": "git create",
+      "C": "git new branch",
+      "D": "git branch"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "médio"
   },
   {
     "id": 53,
     "pergunta": "O que é cloud computing?",
     "alternativas": {
-      "A": "Programação em nuvens",
-      "B": "Computação distribuída via internet",
-      "C": "Armazenamento local",
-      "D": "Programação meteorológica"
+      "A": "Computação distribuída via internet",
+      "B": "Programação meteorológica",
+      "C": "Programação em nuvens",
+      "D": "Armazenamento local"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 54,
     "pergunta": "Qual é a principal vantagem do NoSQL?",
     "alternativas": {
-      "A": "Mais rápido que SQL",
-      "B": "Escalabilidade horizontal",
-      "C": "Mais seguro",
-      "D": "Mais barato"
+      "A": "Mais barato",
+      "B": "Mais rápido que SQL",
+      "C": "Escalabilidade horizontal",
+      "D": "Mais seguro"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
@@ -652,35 +652,35 @@
     "pergunta": "O que é DevOps?",
     "alternativas": {
       "A": "Uma linguagem de programação",
-      "B": "Integração entre desenvolvimento e operações",
+      "B": "Um sistema operacional",
       "C": "Um banco de dados",
-      "D": "Um sistema operacional"
+      "D": "Integração entre desenvolvimento e operações"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "médio"
   },
   {
     "id": 56,
     "pergunta": "Qual é o padrão Observer?",
     "alternativas": {
-      "A": "Criar uma única instância",
-      "B": "Notificar mudanças a observadores",
-      "C": "Criar objetos complexos",
+      "A": "Notificar mudanças a observadores",
+      "B": "Criar objetos complexos",
+      "C": "Criar uma única instância",
       "D": "Adaptar interfaces"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "difícil"
   },
   {
     "id": 57,
     "pergunta": "O que é um microserviço?",
     "alternativas": {
-      "A": "Um serviço pequeno",
-      "B": "Arquitetura de aplicações distribuídas",
-      "C": "Um tipo de banco de dados",
-      "D": "Uma linguagem de programação"
+      "A": "Uma linguagem de programação",
+      "B": "Um tipo de banco de dados",
+      "C": "Arquitetura de aplicações distribuídas",
+      "D": "Um serviço pequeno"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
@@ -699,48 +699,48 @@
     "id": 59,
     "pergunta": "O que é um webhook?",
     "alternativas": {
-      "A": "Um tipo de loop",
-      "B": "Callback HTTP automático",
-      "C": "Uma função recursiva",
-      "D": "Um protocolo de rede"
+      "A": "Callback HTTP automático",
+      "B": "Um tipo de loop",
+      "C": "Um protocolo de rede",
+      "D": "Uma função recursiva"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "difícil"
   },
   {
     "id": 60,
     "pergunta": "Qual é a principal característica do paradigma funcional?",
     "alternativas": {
-      "A": "Usar classes e objetos",
-      "B": "Funções como cidadãos de primeira classe",
+      "A": "Funções como cidadãos de primeira classe",
+      "B": "Usar classes e objetos",
       "C": "Programação sequencial",
       "D": "Uso de ponteiros"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "difícil"
   },
   {
     "id": 61,
     "pergunta": "O que é CI/CD?",
     "alternativas": {
-      "A": "Continuous Integration/Continuous Deployment",
-      "B": "Code Integration/Code Deployment",
-      "C": "Computer Intelligence/Computer Design",
-      "D": "Client Interface/Client Database"
+      "A": "Computer Intelligence/Computer Design",
+      "B": "Continuous Integration/Continuous Deployment",
+      "C": "Client Interface/Client Database",
+      "D": "Code Integration/Code Deployment"
     },
-    "correta": "A",
+    "correta": "B",
     "nivel": "médio"
   },
   {
     "id": 62,
     "pergunta": "Qual é o comando para reverter um commit no Git?",
     "alternativas": {
-      "A": "git undo",
-      "B": "git revert",
+      "A": "git revert",
+      "B": "git return",
       "C": "git back",
-      "D": "git return"
+      "D": "git undo"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "médio"
   },
   {
@@ -748,9 +748,9 @@
     "pergunta": "O que é um CDN?",
     "alternativas": {
       "A": "Content Delivery Network",
-      "B": "Code Development Network",
-      "C": "Computer Data Network",
-      "D": "Client Database Network"
+      "B": "Computer Data Network",
+      "C": "Client Database Network",
+      "D": "Code Development Network"
     },
     "correta": "A",
     "nivel": "médio"
@@ -759,12 +759,12 @@
     "id": 64,
     "pergunta": "Qual é a diferença entre SQL e NoSQL?",
     "alternativas": {
-      "A": "SQL é mais rápido",
-      "B": "SQL é relacional, NoSQL é não-relacional",
-      "C": "NoSQL é mais seguro",
-      "D": "Não há diferença"
+      "A": "NoSQL é mais seguro",
+      "B": "Não há diferença",
+      "C": "SQL é relacional, NoSQL é não-relacional",
+      "D": "SQL é mais rápido"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "médio"
   },
   {
@@ -772,11 +772,11 @@
     "pergunta": "O que é um load balancer?",
     "alternativas": {
       "A": "Um tipo de banco de dados",
-      "B": "Distribui requisições entre servidores",
-      "C": "Uma linguagem de programação",
-      "D": "Um protocolo de rede"
+      "B": "Um protocolo de rede",
+      "C": "Distribui requisições entre servidores",
+      "D": "Uma linguagem de programação"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
@@ -784,8 +784,8 @@
     "pergunta": "Qual é o padrão MVC?",
     "alternativas": {
       "A": "Model-View-Controller",
-      "B": "Multiple-Variable-Control",
-      "C": "Master-View-Client",
+      "B": "Master-View-Client",
+      "C": "Multiple-Variable-Control",
       "D": "Model-Virtual-Container"
     },
     "correta": "A",
@@ -795,36 +795,36 @@
     "id": 67,
     "pergunta": "O que é um ORM?",
     "alternativas": {
-      "A": "Object Relational Mapping",
-      "B": "Online Resource Manager",
-      "C": "Operational Risk Management",
+      "A": "Operational Risk Management",
+      "B": "Object Relational Mapping",
+      "C": "Online Resource Manager",
       "D": "Object Resource Model"
     },
-    "correta": "A",
+    "correta": "B",
     "nivel": "difícil"
   },
   {
     "id": 68,
     "pergunta": "Qual é a principal vantagem do Docker?",
     "alternativas": {
-      "A": "Mais velocidade",
-      "B": "Isolamento e portabilidade",
-      "C": "Menos memória",
-      "D": "Mais segurança"
+      "A": "Mais segurança",
+      "B": "Menos memória",
+      "C": "Isolamento e portabilidade",
+      "D": "Mais velocidade"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
     "id": 69,
     "pergunta": "O que é GraphQL?",
     "alternativas": {
-      "A": "Um banco de dados",
-      "B": "Uma linguagem de consulta para APIs",
-      "C": "Um framework web",
-      "D": "Um protocolo de rede"
+      "A": "Um protocolo de rede",
+      "B": "Um framework web",
+      "C": "Uma linguagem de consulta para APIs",
+      "D": "Um banco de dados"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
@@ -843,34 +843,34 @@
     "id": 71,
     "pergunta": "O que é Kubernetes?",
     "alternativas": {
-      "A": "Uma linguagem de programação",
-      "B": "Orquestrador de containers",
-      "C": "Um banco de dados",
-      "D": "Um sistema operacional"
+      "A": "Um sistema operacional",
+      "B": "Um banco de dados",
+      "C": "Orquestrador de containers",
+      "D": "Uma linguagem de programação"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
     "id": 72,
     "pergunta": "Qual é o protocolo usado pelo Git?",
     "alternativas": {
-      "A": "HTTP",
-      "B": "SSH",
+      "A": "Todos os anteriores",
+      "B": "HTTP",
       "C": "Git Protocol",
-      "D": "Todos os anteriores"
+      "D": "SSH"
     },
-    "correta": "D",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 73,
     "pergunta": "O que é um design pattern?",
     "alternativas": {
-      "A": "Um tipo de algoritmo",
+      "A": "Um protocolo de rede",
       "B": "Solução reutilizável para problemas comuns",
-      "C": "Uma linguagem de programação",
-      "D": "Um protocolo de rede"
+      "C": "Um tipo de algoritmo",
+      "D": "Uma linguagem de programação"
     },
     "correta": "B",
     "nivel": "médio"
@@ -879,24 +879,24 @@
     "id": 74,
     "pergunta": "Qual é a diferença entre compilação e interpretação?",
     "alternativas": {
-      "A": "Compilação é mais lenta",
-      "B": "Compilação traduz antes da execução",
-      "C": "Interpretação é mais segura",
+      "A": "Interpretação é mais segura",
+      "B": "Compilação é mais lenta",
+      "C": "Compilação traduz antes da execução",
       "D": "Não há diferença"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "médio"
   },
   {
     "id": 75,
     "pergunta": "O que é um middleware?",
     "alternativas": {
-      "A": "Um tipo de banco de dados",
-      "B": "Software que conecta componentes",
-      "C": "Uma linguagem de programação",
-      "D": "Um protocolo de rede"
+      "A": "Software que conecta componentes",
+      "B": "Um tipo de banco de dados",
+      "C": "Um protocolo de rede",
+      "D": "Uma linguagem de programação"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "difícil"
   },
   {
@@ -904,33 +904,33 @@
     "pergunta": "Qual é a principal característica do REST?",
     "alternativas": {
       "A": "Stateful",
-      "B": "Stateless",
-      "C": "Sempre usa JSON",
-      "D": "Só funciona com HTTP"
+      "B": "Só funciona com HTTP",
+      "C": "Stateless",
+      "D": "Sempre usa JSON"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
     "id": 77,
     "pergunta": "O que é um cache?",
     "alternativas": {
-      "A": "Um tipo de loop",
-      "B": "Armazenamento temporário para acesso rápido",
-      "C": "Uma função recursiva",
+      "A": "Armazenamento temporário para acesso rápido",
+      "B": "Uma função recursiva",
+      "C": "Um tipo de loop",
       "D": "Um protocolo de rede"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "médio"
   },
   {
     "id": 78,
     "pergunta": "Qual é a diferença entre var, let e const em JavaScript?",
     "alternativas": {
-      "A": "Não há diferença",
+      "A": "Compatibilidade com browsers",
       "B": "Escopo e mutabilidade",
       "C": "Velocidade de execução",
-      "D": "Compatibilidade com browsers"
+      "D": "Não há diferença"
     },
     "correta": "B",
     "nivel": "médio"
@@ -939,36 +939,36 @@
     "id": 79,
     "pergunta": "O que é um callback?",
     "alternativas": {
-      "A": "Uma função passada como argumento",
-      "B": "Um tipo de loop",
-      "C": "Uma variável global",
+      "A": "Um tipo de loop",
+      "B": "Uma variável global",
+      "C": "Uma função passada como argumento",
       "D": "Um protocolo de rede"
     },
-    "correta": "A",
+    "correta": "C",
     "nivel": "médio"
   },
   {
     "id": 80,
     "pergunta": "Qual é a diferença entre Promise e async/await?",
     "alternativas": {
-      "A": "Promise é mais rápida",
-      "B": "async/await é sintaxe mais limpa para Promises",
-      "C": "São completamente diferentes",
-      "D": "async/await não usa Promises"
+      "A": "São completamente diferentes",
+      "B": "async/await não usa Promises",
+      "C": "async/await é sintaxe mais limpa para Promises",
+      "D": "Promise é mais rápida"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
     "id": 81,
     "pergunta": "O que é um closure em JavaScript?",
     "alternativas": {
-      "A": "Uma função que acessa variáveis do escopo externo",
-      "B": "Um tipo de loop",
-      "C": "Uma estrutura de dados",
-      "D": "Um protocolo de rede"
+      "A": "Uma estrutura de dados",
+      "B": "Um protocolo de rede",
+      "C": "Uma função que acessa variáveis do escopo externo",
+      "D": "Um tipo de loop"
     },
-    "correta": "A",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
@@ -987,24 +987,24 @@
     "id": 83,
     "pergunta": "O que é TDD?",
     "alternativas": {
-      "A": "Test Driven Development",
-      "B": "Technical Design Document",
-      "C": "Time Driven Deployment",
-      "D": "Total Data Development"
+      "A": "Total Data Development",
+      "B": "Test Driven Development",
+      "C": "Technical Design Document",
+      "D": "Time Driven Deployment"
     },
-    "correta": "A",
+    "correta": "B",
     "nivel": "médio"
   },
   {
     "id": 84,
-    "pergunta": "Qual é a diferença entre unit test e integration test?",
+    "pergunta": "Quem criou a linguagem Python?",
     "alternativas": {
-      "A": "Unit test é mais rápido",
-      "B": "Unit test testa componentes isolados",
-      "C": "Integration test é mais importante",
-      "D": "Não há diferença"
+      "A": "Guido van Rossum",
+      "B": "James Gosling",
+      "C": "Brendan Eich",
+      "D": "Dennis Ritchie"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "médio"
   },
   {
@@ -1012,11 +1012,11 @@
     "pergunta": "O que é refactoring?",
     "alternativas": {
       "A": "Adicionar novas funcionalidades",
-      "B": "Melhorar código sem mudar funcionalidade",
-      "C": "Corrigir bugs",
-      "D": "Otimizar performance"
+      "B": "Otimizar performance",
+      "C": "Melhorar código sem mudar funcionalidade",
+      "D": "Corrigir bugs"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "médio"
   },
   {
@@ -1024,11 +1024,11 @@
     "pergunta": "Qual é a principal vantagem do TypeScript?",
     "alternativas": {
       "A": "Mais rápido que JavaScript",
-      "B": "Tipagem estática",
-      "C": "Menor tamanho de arquivo",
-      "D": "Melhor performance"
+      "B": "Menor tamanho de arquivo",
+      "C": "Melhor performance",
+      "D": "Tipagem estática"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "médio"
   },
   {
@@ -1037,70 +1037,70 @@
     "alternativas": {
       "A": "Uma cópia em memória do DOM real",
       "B": "Um tipo de banco de dados",
-      "C": "Uma linguagem de programação",
-      "D": "Um protocolo de rede"
+      "C": "Um protocolo de rede",
+      "D": "Uma linguagem de programação"
     },
     "correta": "A",
     "nivel": "difícil"
   },
   {
     "id": 88,
-    "pergunta": "Qual é a diferença entre SQL JOIN types?",
+    "pergunta": "Quem criou o sistema operacional Linux?",
     "alternativas": {
-      "A": "Não há diferença",
-      "B": "Diferentes formas de combinar tabelas",
-      "C": "Velocidade de execução",
-      "D": "Compatibilidade com bancos"
+      "A": "Bill Gates",
+      "B": "Steve Jobs",
+      "C": "Linus Torvalds",
+      "D": "Richard Stallman"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
     "id": 89,
     "pergunta": "O que é normalização de banco de dados?",
     "alternativas": {
-      "A": "Aumentar performance",
-      "B": "Reduzir redundância de dados",
-      "C": "Aumentar segurança",
-      "D": "Facilitar backup"
+      "A": "Facilitar backup",
+      "B": "Aumentar segurança",
+      "C": "Reduzir redundância de dados",
+      "D": "Aumentar performance"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
     "id": 90,
-    "pergunta": "Qual é a diferença entre HTTP/1.1 e HTTP/2?",
+    "pergunta": "Quem criou a linguagem Java?",
     "alternativas": {
-      "A": "HTTP/2 é mais seguro",
-      "B": "HTTP/2 permite multiplexing",
-      "C": "HTTP/1.1 é mais rápido",
-      "D": "Não há diferença"
+      "A": "James Gosling",
+      "B": "Dennis Ritchie",
+      "C": "Bjarne Stroustrup",
+      "D": "Anders Hejlsberg"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "difícil"
   },
   {
     "id": 91,
     "pergunta": "O que é um race condition?",
     "alternativas": {
-      "A": "Um tipo de loop",
-      "B": "Quando threads competem por recursos",
+      "A": "Um protocolo de rede",
+      "B": "Um tipo de loop",
       "C": "Uma técnica de otimização",
-      "D": "Um protocolo de rede"
+      "D": "Quando threads competem por recursos"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "difícil"
   },
   {
     "id": 92,
-    "pergunta": "Qual é a diferença entre stack e heap?",
+    "pergunta": "Quem criou a linguagem C?",
     "alternativas": {
-      "A": "Stack é mais rápido",
-      "B": "Stack para dados temporários, heap para dinâmicos",
-      "C": "Heap é mais seguro",
-      "D": "Não há diferença"
+      "A": "Dennis Ritchie",
+      "B": "Ken Thompson",
+      "C": "Brian Kernighan",
+      "D": "Bjarne Stroustrup"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "difícil"
   },
   {
@@ -1120,33 +1120,33 @@
     "pergunta": "Qual é o padrão Factory?",
     "alternativas": {
       "A": "Criar uma única instância",
-      "B": "Criar objetos sem especificar classe exata",
-      "C": "Observar mudanças",
+      "B": "Observar mudanças",
+      "C": "Criar objetos sem especificar classe exata",
       "D": "Adaptar interfaces"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "difícil"
   },
   {
     "id": 95,
     "pergunta": "O que é event loop em JavaScript?",
     "alternativas": {
-      "A": "Um tipo de loop for",
+      "A": "Um protocolo de rede",
       "B": "Mecanismo de execução assíncrona",
-      "C": "Uma estrutura de dados",
-      "D": "Um protocolo de rede"
+      "C": "Um tipo de loop for",
+      "D": "Uma estrutura de dados"
     },
     "correta": "B",
     "nivel": "muito difícil"
   },
   {
     "id": 96,
-    "pergunta": "Qual é a diferença entre monolito e microserviços?",
+    "pergunta": "Quem fundou a Microsoft?",
     "alternativas": {
-      "A": "Monolito é mais rápido",
-      "B": "Microserviços são mais escaláveis",
-      "C": "Monolito é mais seguro",
-      "D": "Não há diferença"
+      "A": "Steve Jobs",
+      "B": "Bill Gates e Paul Allen",
+      "C": "Larry Page",
+      "D": "Mark Zuckerberg"
     },
     "correta": "B",
     "nivel": "muito difícil"
@@ -1155,70 +1155,70 @@
     "id": 97,
     "pergunta": "O que é SOLID em programação?",
     "alternativas": {
-      "A": "Um tipo de banco de dados",
+      "A": "Uma linguagem de programação",
       "B": "Princípios de design de software",
-      "C": "Uma linguagem de programação",
-      "D": "Um protocolo de rede"
+      "C": "Um protocolo de rede",
+      "D": "Um tipo de banco de dados"
     },
     "correta": "B",
     "nivel": "muito difícil"
   },
   {
     "id": 98,
-    "pergunta": "Qual é a diferença entre TCP e UDP?",
+    "pergunta": "Quem criou o Facebook?",
     "alternativas": {
-      "A": "TCP é mais rápido",
-      "B": "TCP é confiável, UDP é rápido",
-      "C": "UDP é mais seguro",
-      "D": "Não há diferença"
+      "A": "Larry Page",
+      "B": "Jack Dorsey",
+      "C": "Mark Zuckerberg",
+      "D": "Elon Musk"
     },
-    "correta": "B",
+    "correta": "C",
     "nivel": "muito difícil"
   },
   {
     "id": 99,
     "pergunta": "O que é CAP theorem?",
     "alternativas": {
-      "A": "Consistency, Availability, Partition tolerance",
-      "B": "Code, Algorithm, Performance",
-      "C": "Client, API, Protocol",
-      "D": "Cache, Access, Processing"
+      "A": "Code, Algorithm, Performance",
+      "B": "Consistency, Availability, Partition tolerance",
+      "C": "Cache, Access, Processing",
+      "D": "Client, API, Protocol"
     },
-    "correta": "A",
+    "correta": "B",
     "nivel": "muito difícil"
   },
   {
     "id": 100,
     "pergunta": "Qual é a complexidade do algoritmo de ordenação Merge Sort?",
     "alternativas": {
-      "A": "O(n)",
-      "B": "O(n log n)",
-      "C": "O(n²)",
-      "D": "O(log n)"
+      "A": "O(n log n)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n²)"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "muito difícil"
   },
   {
     "id": 101,
     "pergunta": "O que é blockchain?",
     "alternativas": {
-      "A": "Um tipo de banco de dados",
-      "B": "Tecnologia de registro distribuído",
+      "A": "Tecnologia de registro distribuído",
+      "B": "Um protocolo de rede",
       "C": "Uma linguagem de programação",
-      "D": "Um protocolo de rede"
+      "D": "Um tipo de banco de dados"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "muito difícil"
   },
   {
     "id": 102,
-    "pergunta": "Qual é a diferença entre IPv4 e IPv6?",
+    "pergunta": "Quem criou o Google?",
     "alternativas": {
-      "A": "IPv6 tem mais endereços disponíveis",
-      "B": "IPv4 é mais rápido",
-      "C": "IPv6 é menos seguro",
-      "D": "Não há diferença"
+      "A": "Larry Page e Sergey Brin",
+      "B": "Bill Gates",
+      "C": "Steve Jobs",
+      "D": "Jeff Bezos"
     },
     "correta": "A",
     "nivel": "muito difícil"
@@ -1227,22 +1227,22 @@
     "id": 103,
     "pergunta": "O que é Big Data?",
     "alternativas": {
-      "A": "Dados grandes em tamanho",
-      "B": "Dados com volume, velocidade e variedade",
+      "A": "Dados com volume, velocidade e variedade",
+      "B": "Dados em nuvem",
       "C": "Dados importantes",
-      "D": "Dados em nuvem"
+      "D": "Dados grandes em tamanho"
     },
-    "correta": "B",
+    "correta": "A",
     "nivel": "muito difícil"
   },
   {
     "id": 104,
     "pergunta": "Qual é o padrão Strategy?",
     "alternativas": {
-      "A": "Criar uma única instância",
+      "A": "Criar objetos complexos",
       "B": "Definir família de algoritmos intercambiáveis",
       "C": "Observar mudanças",
-      "D": "Criar objetos complexos"
+      "D": "Criar uma única instância"
     },
     "correta": "B",
     "nivel": "muito difícil"
@@ -1251,22 +1251,22 @@
     "id": 105,
     "pergunta": "O que é eventual consistency?",
     "alternativas": {
-      "A": "Dados sempre consistentes",
-      "B": "Consistência alcançada eventualmente",
-      "C": "Inconsistência permanente",
-      "D": "Consistência imediata"
+      "A": "Inconsistência permanente",
+      "B": "Dados sempre consistentes",
+      "C": "Consistência imediata",
+      "D": "Consistência alcançada eventualmente"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "muito difícil"
   },
   {
     "id": 106,
-    "pergunta": "Qual é a diferença entre SQL INNER JOIN e LEFT JOIN?",
+    "pergunta": "Quem criou a linguagem C++?",
     "alternativas": {
-      "A": "INNER JOIN é mais rápido",
-      "B": "LEFT JOIN retorna todos registros da tabela esquerda",
-      "C": "INNER JOIN é mais seguro",
-      "D": "Não há diferença"
+      "A": "Dennis Ritchie",
+      "B": "Bjarne Stroustrup",
+      "C": "James Gosling",
+      "D": "Ken Thompson"
     },
     "correta": "B",
     "nivel": "muito difícil"
@@ -1276,44 +1276,44 @@
     "pergunta": "O que é sharding em bancos de dados?",
     "alternativas": {
       "A": "Backup de dados",
-      "B": "Particionamento horizontal de dados",
-      "C": "Criptografia de dados",
-      "D": "Compressão de dados"
+      "B": "Criptografia de dados",
+      "C": "Compressão de dados",
+      "D": "Particionamento horizontal de dados"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "muito difícil"
   },
   {
     "id": 108,
-    "pergunta": "Qual é a diferença entre authentication e authorization?",
+    "pergunta": "Quem fundou a Apple?",
     "alternativas": {
-      "A": "Authentication verifica identidade, authorization verifica permissões",
-      "B": "São a mesma coisa",
-      "C": "Authorization é mais importante",
-      "D": "Authentication é mais seguro"
+      "A": "Bill Gates",
+      "B": "Steve Jobs e Steve Wozniak",
+      "C": "Larry Ellison",
+      "D": "Michael Dell"
     },
-    "correta": "A",
+    "correta": "B",
     "nivel": "muito difícil"
   },
   {
     "id": 109,
     "pergunta": "O que é MapReduce?",
     "alternativas": {
-      "A": "Um tipo de banco de dados",
-      "B": "Modelo de programação para processamento distribuído",
-      "C": "Uma linguagem de programação",
-      "D": "Um protocolo de rede"
+      "A": "Uma linguagem de programação",
+      "B": "Um protocolo de rede",
+      "C": "Um tipo de banco de dados",
+      "D": "Modelo de programação para processamento distribuído"
     },
-    "correta": "B",
+    "correta": "D",
     "nivel": "muito difícil"
   },
   {
     "id": 110,
     "pergunta": "Qual é a principal característica do paradigma reativo?",
     "alternativas": {
-      "A": "Programação sequencial",
+      "A": "Uso de classes e objetos",
       "B": "Resposta a mudanças de forma assíncrona",
-      "C": "Uso de classes e objetos",
+      "C": "Programação sequencial",
       "D": "Programação funcional pura"
     },
     "correta": "B",
