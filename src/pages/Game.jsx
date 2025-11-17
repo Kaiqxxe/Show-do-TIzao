@@ -277,7 +277,7 @@ const Game = ({ perguntas, onGameEnd, onQuitToMenu, playSound }) => {
             <Lifelines
               lifelines={lifelines}
               onUseLifeline={handleUseLifeline}
-              disabled={showConfirm}
+              disabled={isProcessing}
             />
 
             <button

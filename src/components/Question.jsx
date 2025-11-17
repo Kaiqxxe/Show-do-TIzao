@@ -28,7 +28,7 @@ const Question = ({ pergunta, onAnswer, selectedAnswer, showConfirm, eliminatedO
                 : selectedAnswer === letra
                 ? 'bg-red-600 border-red-600 text-white font-semibold shadow-xl transform scale-102'
                 : 'bg-white border-gray-200 hover:bg-gray-50 hover:border-blue-600 hover:shadow-md hover:scale-102 btn-professional'
-            } ${showConfirm ? 'cursor-not-allowed opacity-75' : 'cursor-pointer'}`}
+            } cursor-pointer`}
           >
             {selectedAnswer === letra && (
               <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-600 animate-fill-smooth" />
