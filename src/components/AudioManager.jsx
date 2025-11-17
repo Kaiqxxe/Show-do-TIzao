@@ -1,7 +1,7 @@
 import { useRef, useCallback } from 'react';
 
 const AudioManager = () => {
-  const audioRef = useRef(null);
+
 
   const playSound = useCallback((type, perguntaId, isMuted = false) => {
     if (isMuted) return;
