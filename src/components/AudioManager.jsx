@@ -1,4 +1,4 @@
-import { useRef, useCallback } from 'react';
+import { useCallback } from 'react';
 
 const AudioManager = () => {
   const audioRef = useRef(null);
