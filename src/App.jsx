@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import Menu from './pages/Menu';
+import CategorySelection from './pages/CategorySelection';
 import Game from './pages/Game';
 import GameOver from './pages/GameOver';
 import Rules from './pages/Rules';
 import AudioManager from './components/AudioManager';
-import perguntas from './data/perguntas.json';
+import perguntasTI from './data/perguntas.json';
+import perguntasGerais from './data/perguntasGerais.json';
 import './App.css';
 
 function App() {
-  const [gameState, setGameState] = useState('menu'); // menu, game, gameOver, rules
+  const [gameState, setGameState] = useState('menu'); // menu, categorySelection, game, gameOver, rules
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const [gameResult, setGameResult] = useState({ won: false, finalPrize: 0 });
   const [isMuted, setIsMuted] = useState(false);
   const { playSound } = AudioManager();
@@ -30,7 +33,12 @@ function App() {
     return shuffled;
   };
 
-  const startGame = () => {
+  const showCategorySelection = () => {
+    setGameState('categorySelection');
+  };
+
+  const selectCategory = (category) => {
+    setSelectedCategory(category);
     setGameState('game');
   };
 
@@ -55,11 +63,14 @@ function App() {
     setGameState('rules');
   };
 
-  const shuffledPerguntas = shuffleArray(perguntas).slice(0, 10);
-  const orderedPerguntas = shuffledPerguntas.map((pergunta, index) => ({
-    ...pergunta,
-    valor: [1000, 10000, 30000, 50000, 100000, 200000, 300000, 400000, 500000, 1000000][index]
-  }));
+  const getCurrentPerguntas = () => {
+    const perguntas = selectedCategory === 'gerais' ? perguntasGerais : perguntasTI;
+    const shuffledPerguntas = shuffleArray(perguntas).slice(0, 10);
+    return shuffledPerguntas.map((pergunta, index) => ({
+      ...pergunta,
+      valor: [1000, 10000, 30000, 50000, 100000, 200000, 300000, 400000, 500000, 1000000][index]
+    }));
+  };
 
   return (
     <div className="App">
@@ -94,9 +105,16 @@ function App() {
 
       {gameState === 'menu' && (
         <Menu 
-          onStartGame={startGame}
+          onStartGame={showCategorySelection}
           onShowRules={showRules}
           playSound={handlePlaySound}
+        />
+      )}
+      
+      {gameState === 'categorySelection' && (
+        <CategorySelection 
+          onSelectCategory={selectCategory}
+          onBackToMenu={backToMenu}
         />
       )}
       
@@ -104,9 +122,10 @@ function App() {
         <Rules onBackToMenu={backToMenu} />
       )}
       
-      {gameState === 'game' && (
+      {gameState === 'game' && selectedCategory && (
         <Game 
-          perguntas={orderedPerguntas}
+          perguntas={getCurrentPerguntas()}
+          category={selectedCategory}
           onGameEnd={endGame}
           onQuitToMenu={quitToMenu}
           playSound={handlePlaySound}
