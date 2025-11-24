@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Question from '../components/Question';
 import Lifelines from '../components/Lifelines';
 import ScoreBoard from '../components/ScoreBoard';
@@ -7,6 +7,8 @@ const Game = ({ perguntas, category, onGameEnd, onQuitToMenu, playSound }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showConfirm, setShowConfirm] = useState(false);
+  const questionRef = useRef(null);
+  const confirmButtonRef = useRef(null);
   const [lifelines, setLifelines] = useState({
     pular: true,
     eliminar: true,
@@ -27,11 +29,39 @@ const Game = ({ perguntas, category, onGameEnd, onQuitToMenu, playSound }) => {
     }
   }, [currentQuestionIndex, playSound, currentQuestion]);
 
+  const scrollToConfirmButton = () => {
+    if (confirmButtonRef.current && window.innerWidth < 1024) {
+      confirmButtonRef.current.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center' 
+      });
+    }
+  };
+
+  const scrollToTop = () => {
+    if (window.innerWidth < 1024) {
+      window.scrollTo({ 
+        top: 0, 
+        behavior: 'smooth' 
+      });
+    }
+  };
+
+  const scrollToQuestion = () => {
+    if (questionRef.current && window.innerWidth < 1024) {
+      questionRef.current.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+  };
+
   const handleAnswer = (answer) => {
     if (eliminatedOptions.includes(answer)) return;
     setSelectedAnswer(answer);
     setShowConfirm(true);
     playSound('confirmar');
+    setTimeout(scrollToConfirmButton, 100);
   };
 
   const handleConfirm = () => {
@@ -53,6 +83,7 @@ const Game = ({ perguntas, category, onGameEnd, onQuitToMenu, playSound }) => {
           setEliminatedOptions([]);
           setShowDica(false);
           setIsProcessing(false);
+          setTimeout(scrollToTop, 100);
         }
       }, 2000);
     } else {
@@ -90,11 +121,13 @@ const Game = ({ perguntas, category, onGameEnd, onQuitToMenu, playSound }) => {
         );
         const toEliminate = wrongAnswers.slice(0, 2);
         setEliminatedOptions(toEliminate);
+        setTimeout(scrollToQuestion, 100);
         break;
 
       case 'dica':
         setLifelines(prev => ({ ...prev, dica: false }));
         setShowDica(true);
+        setTimeout(scrollToQuestion, 100);
         break;
 
       default:
@@ -214,7 +247,6 @@ const Game = ({ perguntas, category, onGameEnd, onQuitToMenu, playSound }) => {
       108: "Fundadores da Apple.",
       109: "Paradigma para processamento paralelo de grandes datasets.",
       110: "Responde a eventos e mudanças de forma assíncrona.",
-      // Dicas para Conhecimentos Gerais (IDs 1-110 reutilizados)
       1001: "Capital federal do país, localizada no centro-oeste.",
       1002: "América, Europa, Ásia, África, Oceania, Antártica e mais um.",
       1003: "O gigante gasoso com a Grande Mancha Vermelha.",
@@ -324,16 +356,121 @@ const Game = ({ perguntas, category, onGameEnd, onQuitToMenu, playSound }) => {
       1107: "Maior arquipélago mundial, milhares de ilhas.",
       1108: "Estátua do Cristo no Rio de Janeiro.",
       1109: "Primeiro livro de Harry Potter.",
-      1110: "Último imperador brasileiro, exilado."
+      1110: "Último imperador brasileiro, exilado.",
+      // Dicas para Direito (IDs 2001-2050)
+      2001: "Garantia fundamental do processo judicial.",
+      2002: "Limite máximo de privação de liberdade no país.",
+      2003: "Corte máxima do Poder Judiciário brasileiro.",
+      2004: "Idade mínima para o cargo máximo do Executivo.",
+      2005: "Remédio constitucional para liberdade de ir e vir.",
+      2006: "Prazo para crimes mais graves contra a vida.",
+      2007: "Aquisição de propriedade pelo tempo de posse.",
+      2008: "Número de ministros da Suprema Corte.",
+      2009: "Legislação trabalhista consolidada.",
+      2010: "Competência para julgar o chefe do Executivo.",
+      2011: "Intenção consciente de praticar o crime.",
+      2012: "Idade para adquirir capacidade civil plena.",
+      2013: "Remédio contra ato ilegal de autoridade.",
+      2014: "Duração do mandato na Câmara dos Deputados.",
+      2015: "Excludente de ilicitude em situação de agressão.",
+      2016: "Prazo para responder à ação judicial.",
+      2017: "Entidade que representa os advogados.",
+      2018: "Penação para crime contra a vida sem qualificadoras.",
+      2019: "Decisões repetidas dos tribunais superiores.",
+      2020: "Representação de cada estado no Senado.",
+      2021: "Ação para retomar imóvel locado.",
+      2022: "Prazo para anular sentença transitada em julgado.",
+      2023: "Crime sem intenção, por falta de cuidado.",
+      2024: "Idade mínima para ser deputado federal.",
+      2025: "Ação para pedir sustento familiar.",
+      2026: "Procuração não tem prazo legal definido.",
+      2027: "Instituição que defende a sociedade.",
+      2028: "Justiça especializada em crimes eleitorais.",
+      2029: "Situação que exclui a criminalidade do ato.",
+      2030: "Mandato mais longo do Legislativo federal.",
+      2031: "Ação para esclarecer existência de direito.",
+      2032: "Pena máxima para infrações menores.",
+      2033: "Remédio para falta de regulamentação legal.",
+      2034: "Idade mínima para chefe do Executivo municipal.",
+      2035: "Crimes de gravidade excepcional.",
+      2036: "Prazo para recorrer de sentença de primeiro grau.",
+      2037: "Ação para questionar lei inconstitucional.",
+      2038: "Prescrição varia conforme a pena aplicada.",
+      2039: "Ação para cobrar dívida documentada.",
+      2040: "Número de ministros do Superior Tribunal.",
+      2041: "Ação para depositar pagamento recusado.",
+      2042: "Prazo para questionar casamento inválido.",
+      2043: "Vários crimes similares em sequência.",
+      2044: "Idade mínima para vereador municipal.",
+      2045: "Ação para estabelecer filiação paterna.",
+      2046: "Prazo para contestar cobrança fiscal.",
+      2047: "Ação principal de controle de constitucionalidade.",
+      2048: "Prazo para anular negócio jurídico viciado.",
+      2049: "Ação para adquirir propriedade por posse.",
+      2050: "Mandato presidencial no sistema brasileiro.",
+      // Dicas para Medicina (IDs 3001-3050)
+      3001: "Osso da coxa, o maior do esqueleto humano.",
+      3002: "Dois átrios e dois ventrículos.",
+      3003: "Filtração sanguínea e produção de urina.",
+      3004: "Reveste todo o corpo externamente.",
+      3005: "Valores ideais para adultos saudáveis.",
+      3006: "Proteína dos glóbulos vermelhos.",
+      3007: "Protege o tórax e os órgãos internos.",
+      3008: "Hormônio que controla o açúcar no sangue.",
+      3009: "Maior glândula do corpo humano.",
+      3010: "Membrana que envolve o músculo cardíaco.",
+      3011: "Dentição completa do adulto.",
+      3012: "Processo de formação das células sanguíneas.",
+      3013: "Células de defesa do organismo.",
+      3014: "Principal artéria que sai do ventrículo esquerdo.",
+      3015: "Temperatura corporal normal do ser humano.",
+      3016: "Músculo essencial para a respiração.",
+      3017: "Estrutura de sustentação do corpo.",
+      3018: "Responsáveis pela coagulação sanguínea.",
+      3019: "Doença por deficiência de vitamina C.",
+      3020: "Batimentos cardíacos normais por minuto.",
+      3021: "Hormônio responsável pelo crescimento.",
+      3022: "Volume sanguíneo total no organismo.",
+      3023: "Filtra sangue e armazena células sanguíneas.",
+      3024: "Membrana que reveste os pulmões.",
+      3025: "Local de produção das células sanguíneas.",
+      3026: "Vitamina sintetizada pela pele com sol.",
+      3027: "Sistema muscular completo do corpo.",
+      3028: "Armazena a bile produzida pelo fígado.",
+      3029: "Divisão celular para crescimento e reparação.",
+      3030: "Volume total de ar que os pulmões comportam.",
+      3031: "Doença causada pela falta de insulina.",
+      3032: "Material genético em cada célula humana.",
+      3033: "Coordena movimentos e equilíbrio corporal.",
+      3034: "Tipo de articulação móvel do joelho.",
+      3035: "Glândula que regula o metabolismo corporal.",
+      3036: "Fluido que lubrifica as articulações.",
+      3037: "Nervos que saem diretamente do cérebro.",
+      3038: "Proteínas de defesa contra infecções.",
+      3039: "Membranas protetoras do sistema nervoso central.",
+      3040: "Ciclo reprodutivo feminino normal.",
+      3041: "Processo de formação da urina nos rins.",
+      3042: "Cavidade única do estômago humano.",
+      3043: "Função principal da hemoglobina sanguínea.",
+      3044: "Anemia causada por deficiência de ferro.",
+      3045: "Função endócrina do pâncreas.",
+      3046: "Proteína estrutural mais abundante.",
+      3047: "Volume de ar respirado por minuto.",
+      3048: "Hormônio da resposta de luta ou fuga.",
+      3049: "Célula básica do sistema nervoso.",
+      3050: "Sistema de defesa e drenagem corporal."
     };
     
-    // Usar dicas baseadas na categoria
+    let dicaId = currentQuestion.id;
     if (category === 'gerais') {
-      const dicaId = currentQuestion.id + 1000;
-      return dicas[dicaId] || "Pense bem na resposta!";
-    } else {
-      return dicas[currentQuestion.id] || "Pense bem na resposta!";
+      dicaId = currentQuestion.id + 1000;
+    } else if (category === 'direito') {
+      dicaId = currentQuestion.id + 2000;
+    } else if (category === 'medicina') {
+      dicaId = currentQuestion.id + 3000;
     }
+    
+    return dicas[dicaId] || "Pense bem na resposta!";
   };
 
   if (!currentQuestion) {
@@ -345,14 +482,16 @@ const Game = ({ perguntas, category, onGameEnd, onQuitToMenu, playSound }) => {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           <div className="lg:col-span-3">
-            <Question
-              pergunta={currentQuestion}
-              onAnswer={handleAnswer}
-              selectedAnswer={selectedAnswer}
-              showConfirm={showConfirm}
-              eliminatedOptions={eliminatedOptions}
-              showCorrectAnswer={showCorrectAnswer}
-            />
+            <div ref={questionRef}>
+              <Question
+                pergunta={currentQuestion}
+                onAnswer={handleAnswer}
+                selectedAnswer={selectedAnswer}
+                showConfirm={showConfirm}
+                eliminatedOptions={eliminatedOptions}
+                showCorrectAnswer={showCorrectAnswer}
+              />
+            </div>
 
             {showDica && (
               <div className="bg-blue-50 border border-blue-200 p-6 mt-6 rounded-xl shadow-lg">
@@ -363,7 +502,7 @@ const Game = ({ perguntas, category, onGameEnd, onQuitToMenu, playSound }) => {
             )}
 
             {showConfirm && (
-              <div className="text-center mt-8 space-x-6">
+              <div ref={confirmButtonRef} className="text-center mt-8 space-x-6">
                 <button
                   onClick={handleConfirm}
                   disabled={isProcessing}

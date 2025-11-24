@@ -7,6 +7,8 @@ import Rules from './pages/Rules';
 import AudioManager from './components/AudioManager';
 import perguntasTI from './data/perguntas.json';
 import perguntasGerais from './data/perguntasGerais.json';
+import perguntasDireito from './data/perguntasDireito.json';
+import perguntasMedicina from './data/perguntasMedicina.json';
 import './App.css';
 
 function App() {
@@ -64,7 +66,20 @@ function App() {
   };
 
   const getCurrentPerguntas = () => {
-    const perguntas = selectedCategory === 'gerais' ? perguntasGerais : perguntasTI;
+    let perguntas;
+    switch(selectedCategory) {
+      case 'gerais':
+        perguntas = perguntasGerais;
+        break;
+      case 'direito':
+        perguntas = perguntasDireito;
+        break;
+      case 'medicina':
+        perguntas = perguntasMedicina;
+        break;
+      default:
+        perguntas = perguntasTI;
+    }
     const shuffledPerguntas = shuffleArray(perguntas).slice(0, 10);
     return shuffledPerguntas.map((pergunta, index) => ({
       ...pergunta,

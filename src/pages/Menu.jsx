@@ -50,7 +50,7 @@ const Menu = ({ onStartGame, onShowRules, playSound }) => {
 
         <div className="mt-12 text-white opacity-75">
           <p>Inspirado no clássico Show do Milhão</p>
-          <p className="text-sm mt-2">Teste seus conhecimentos em programação!</p>
+          <p className="text-sm mt-2">Teste seus conhecimentos em programação e em outras áreas!</p>
         </div>
       </div>
     </div>

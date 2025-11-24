@@ -13,36 +13,56 @@ const CategorySelection = ({ onSelectCategory, onBackToMenu }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <button
             onClick={() => onSelectCategory('ti')}
-            className="group bg-gradient-to-br from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            className="group bg-gradient-to-br from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
           >
             <div className="text-center">
-              <div className="text-6xl mb-4">💻</div>
-              <h2 className="text-3xl font-bold mb-3">ADS & TI</h2>
-              <p className="text-lg opacity-90">
-                Perguntas sobre programação, tecnologia e informática
+              <div className="text-5xl mb-3">💻</div>
+              <h2 className="text-2xl font-bold mb-2">ADS & TI</h2>
+              <p className="text-sm opacity-90">
+                Programação, tecnologia e informática
               </p>
-              <div className="mt-4 text-sm opacity-75">
-                JavaScript, Python, Bancos de Dados, Redes e muito mais!
-              </div>
             </div>
           </button>
 
           <button
             onClick={() => onSelectCategory('gerais')}
-            className="group bg-gradient-to-br from-green-600 to-green-800 hover:from-green-700 hover:to-green-900 text-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            className="group bg-gradient-to-br from-green-600 to-green-800 hover:from-green-700 hover:to-green-900 text-white p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
           >
             <div className="text-center">
-              <div className="text-6xl mb-4">🌍</div>
-              <h2 className="text-3xl font-bold mb-3">Conhecimentos Gerais</h2>
-              <p className="text-lg opacity-90">
-                Perguntas sobre história, geografia, ciências e cultura
+              <div className="text-5xl mb-3">🌍</div>
+              <h2 className="text-2xl font-bold mb-2">Conhecimentos Gerais</h2>
+              <p className="text-sm opacity-90">
+                História, geografia, ciências e cultura
               </p>
-              <div className="mt-4 text-sm opacity-75">
-                História, Geografia, Ciências, Arte, Literatura e mais!
-              </div>
+            </div>
+          </button>
+
+          <button
+            onClick={() => onSelectCategory('direito')}
+            className="group bg-gradient-to-br from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            <div className="text-center">
+              <div className="text-5xl mb-3">⚖️</div>
+              <h2 className="text-2xl font-bold mb-2">Direito</h2>
+              <p className="text-sm opacity-90">
+                Legislação, jurisprudência e normas
+              </p>
+            </div>
+          </button>
+
+          <button
+            onClick={() => onSelectCategory('medicina')}
+            className="group bg-gradient-to-br from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            <div className="text-center">
+              <div className="text-5xl mb-3">🏥</div>
+              <h2 className="text-2xl font-bold mb-2">Medicina</h2>
+              <p className="text-sm opacity-90">
+                Anatomia, fisiologia e saúde
+              </p>
             </div>
           </button>
         </div>
