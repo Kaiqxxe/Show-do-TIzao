@@ -1,4 +1,4 @@
-# 🎯 Show do Tizão
+# 🎯 Show do T.Izão
 
 Um game show interativo inspirado no clássico "Show do Milhão" do Silvio Santos, focado em perguntas sobre programação e informática.
 

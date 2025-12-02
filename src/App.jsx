@@ -39,6 +39,10 @@ function App() {
     setGameState('gameOver');
   };
 
+  const quitToMenu = () => {
+    setGameState('menu');
+  };
+
   const restartGame = () => {
     setGameState('game');
   };
@@ -98,6 +102,7 @@ function App() {
         <Game 
           perguntas={orderedPerguntas}
           onGameEnd={endGame}
+          onQuitToMenu={quitToMenu}
           playSound={handlePlaySound}
         />
       )}
