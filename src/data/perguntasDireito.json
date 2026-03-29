@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Qual é o princípio constitucional que garante que ninguém será processado sem o devido processo legal?",
+    "alternativas": {
+      "A": "Princípio da legalidade",
+      "B": "Princípio do contraditório",
+      "C": "Princípio do devido processo legal",
+      "D": "Princípio da ampla defesa"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 2,
+    "pergunta": "Quantos anos de prisão é a pena máxima no Brasil?",
+    "alternativas": {
+      "A": "30 anos",
+      "B": "25 anos",
+      "C": "35 anos",
+      "D": "40 anos"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 3,
+    "pergunta": "O que significa a sigla STF?",
+    "alternativas": {
+      "A": "Superior Tribunal Federal",
+      "B": "Supremo Tribunal Federal",
+      "C": "Sistema Tributário Federal",
+      "D": "Serviço Tributário Federal"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 4,
+    "pergunta": "Qual é a idade mínima para ser eleito Presidente da República?",
+    "alternativas": {
+      "A": "30 anos",
+      "B": "25 anos",
+      "C": "35 anos",
+      "D": "40 anos"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 5,
+    "pergunta": "O habeas corpus é usado para proteger qual direito?",
+    "alternativas": {
+      "A": "Liberdade de locomoção",
+      "B": "Liberdade de expressão",
+      "C": "Direito de propriedade",
+      "D": "Direito ao trabalho"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 6,
+    "pergunta": "Qual é o prazo prescricional para crimes contra a vida?",
+    "alternativas": {
+      "A": "10 anos",
+      "B": "20 anos",
+      "C": "15 anos",
+      "D": "25 anos"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 7,
+    "pergunta": "O que é usucapião?",
+    "alternativas": {
+      "A": "Forma de aquisição da propriedade pelo uso prolongado",
+      "B": "Tipo de contrato de compra e venda",
+      "C": "Modalidade de financiamento imobiliário",
+      "D": "Processo de desapropriação"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 8,
+    "pergunta": "Quantos ministros compõem o STF?",
+    "alternativas": {
+      "A": "9 ministros",
+      "B": "11 ministros",
+      "C": "13 ministros",
+      "D": "15 ministros"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 9,
+    "pergunta": "O que significa CLT?",
+    "alternativas": {
+      "A": "Código de Leis Trabalhistas",
+      "B": "Consolidação das Leis Trabalhistas",
+      "C": "Consolidação das Leis do Trabalho",
+      "D": "Código das Leis do Trabalho"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 10,
+    "pergunta": "Qual é o foro competente para julgar o Presidente da República por crimes comuns?",
+    "alternativas": {
+      "A": "STF",
+      "B": "STJ",
+      "C": "Senado Federal",
+      "D": "Câmara dos Deputados"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 11,
+    "pergunta": "O que é dolo no Direito Penal?",
+    "alternativas": {
+      "A": "Intenção de causar o resultado",
+      "B": "Negligência do agente",
+      "C": "Erro de conduta",
+      "D": "Imprudência"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 12,
+    "pergunta": "Qual é a maioridade civil no Brasil?",
+    "alternativas": {
+      "A": "16 anos",
+      "B": "18 anos",
+      "C": "21 anos",
+      "D": "17 anos"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 13,
+    "pergunta": "O que é mandado de segurança?",
+    "alternativas": {
+      "A": "Proteção contra ato ilegal de autoridade pública",
+      "B": "Ordem de prisão preventiva",
+      "C": "Medida de segurança para menores",
+      "D": "Garantia de pagamento de dívida"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 14,
+    "pergunta": "Quantos anos dura o mandato de um Deputado Federal?",
+    "alternativas": {
+      "A": "2 anos",
+      "B": "3 anos",
+      "C": "4 anos",
+      "D": "6 anos"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 15,
+    "pergunta": "O que é legítima defesa?",
+    "alternativas": {
+      "A": "Defesa técnica em processo",
+      "B": "Direito de reagir a agressão injusta",
+      "C": "Proteção legal do patrimônio",
+      "D": "Garantia constitucional"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 16,
+    "pergunta": "Qual é o prazo para contestar uma ação no processo civil?",
+    "alternativas": {
+      "A": "10 dias",
+      "B": "15 dias",
+      "C": "20 dias",
+      "D": "30 dias"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 17,
+    "pergunta": "O que significa a sigla OAB?",
+    "alternativas": {
+      "A": "Ordem dos Advogados do Brasil",
+      "B": "Organização dos Advogados Brasileiros",
+      "C": "Órgão dos Advogados do Brasil",
+      "D": "Organismo dos Advogados Brasileiros"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 18,
+    "pergunta": "Qual é a pena para o crime de homicídio simples?",
+    "alternativas": {
+      "A": "6 a 20 anos",
+      "B": "8 a 25 anos",
+      "C": "10 a 30 anos",
+      "D": "12 a 30 anos"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 19,
+    "pergunta": "O que é jurisprudência?",
+    "alternativas": {
+      "A": "Conjunto de leis",
+      "B": "Decisões reiteradas dos tribunais",
+      "C": "Doutrina jurídica",
+      "D": "Código de ética"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 20,
+    "pergunta": "Quantos senadores cada estado elege?",
+    "alternativas": {
+      "A": "2 senadores",
+      "B": "3 senadores",
+      "C": "4 senadores",
+      "D": "5 senadores"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 21,
+    "pergunta": "O que é ação de despejo?",
+    "alternativas": {
+      "A": "Retomada do imóvel pelo proprietário",
+      "B": "Venda forçada de imóvel",
+      "C": "Divisão de herança",
+      "D": "Registro de propriedade"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 22,
+    "pergunta": "Qual é o prazo para propor ação rescisória?",
+    "alternativas": {
+      "A": "1 ano",
+      "B": "2 anos",
+      "C": "3 anos",
+      "D": "5 anos"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 23,
+    "pergunta": "O que é crime culposo?",
+    "alternativas": {
+      "A": "Crime com intenção",
+      "B": "Crime por negligência, imprudência ou imperícia",
+      "C": "Crime contra a honra",
+      "D": "Crime contra o patrimônio"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 24,
+    "pergunta": "Qual é a idade mínima para ser eleito Deputado Federal?",
+    "alternativas": {
+      "A": "18 anos",
+      "B": "21 anos",
+      "C": "25 anos",
+      "D": "30 anos"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 25,
+    "pergunta": "O que é ação de alimentos?",
+    "alternativas": {
+      "A": "Pedido de pensão alimentícia",
+      "B": "Ação sobre segurança alimentar",
+      "C": "Processo sobre agricultura",
+      "D": "Ação sobre nutrição"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 26,
+    "pergunta": "Qual é o prazo de validade de uma procuração?",
+    "alternativas": {
+      "A": "1 ano",
+      "B": "Não tem prazo definido",
+      "C": "2 anos",
+      "D": "5 anos"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 27,
+    "pergunta": "O que significa a sigla MP no Direito?",
+    "alternativas": {
+      "A": "Medida Provisória",
+      "B": "Ministério Público",
+      "C": "Mandado de Prisão",
+      "D": "Mandado Preventivo"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 28,
+    "pergunta": "Qual é o foro competente para crimes eleitorais?",
+    "alternativas": {
+      "A": "Justiça Federal",
+      "B": "Justiça Estadual",
+      "C": "Justiça Eleitoral",
+      "D": "Justiça Militar"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 29,
+    "pergunta": "O que é estado de necessidade?",
+    "alternativas": {
+      "A": "Situação de emergência nacional",
+      "B": "Causa excludente de ilicitude",
+      "C": "Estado de sítio",
+      "D": "Medida de segurança"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 30,
+    "pergunta": "Quantos anos dura o mandato de um Senador?",
+    "alternativas": {
+      "A": "4 anos",
+      "B": "6 anos",
+      "C": "8 anos",
+      "D": "10 anos"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 31,
+    "pergunta": "O que é ação declaratória?",
+    "alternativas": {
+      "A": "Ação para declarar a existência ou inexistência de relação jurídica",
+      "B": "Ação para cobrar dívida",
+      "C": "Ação para anular contrato",
+      "D": "Ação para indenização"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 32,
+    "pergunta": "Qual é a pena máxima para contravenção penal?",
+    "alternativas": {
+      "A": "6 meses",
+      "B": "1 ano",
+      "C": "2 anos",
+      "D": "5 anos"
+    },
+    "correta": "D",
+    "nivel": "médio"
+  },
+  {
+    "id": 33,
+    "pergunta": "O que é mandado de injunção?",
+    "alternativas": {
+      "A": "Remédio para falta de norma regulamentadora",
+      "B": "Ordem de prisão",
+      "C": "Medida cautelar",
+      "D": "Recurso especial"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 34,
+    "pergunta": "Qual é a idade mínima para ser eleito Prefeito?",
+    "alternativas": {
+      "A": "18 anos",
+      "B": "21 anos",
+      "C": "25 anos",
+      "D": "30 anos"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 35,
+    "pergunta": "O que é crime hediondo?",
+    "alternativas": {
+      "A": "Crime de menor potencial ofensivo",
+      "B": "Crime de especial gravidade",
+      "C": "Crime contra a honra",
+      "D": "Crime culposo"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 36,
+    "pergunta": "Qual é o prazo para interpor recurso de apelação?",
+    "alternativas": {
+      "A": "10 dias",
+      "B": "15 dias",
+      "C": "20 dias",
+      "D": "30 dias"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 37,
+    "pergunta": "O que significa a sigla ADPF?",
+    "alternativas": {
+      "A": "Ação Direta de Preceito Fundamental",
+      "B": "Arguição de Descumprimento de Preceito Fundamental",
+      "C": "Ação de Defesa de Preceito Fundamental",
+      "D": "Arguição Direta de Preceito Fundamental"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 38,
+    "pergunta": "Qual é o prazo de prescrição para crimes contra o patrimônio?",
+    "alternativas": {
+      "A": "Varia conforme a pena",
+      "B": "10 anos",
+      "C": "15 anos",
+      "D": "20 anos"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 39,
+    "pergunta": "O que é ação monitória?",
+    "alternativas": {
+      "A": "Ação para cobrança de dívida com prova escrita",
+      "B": "Ação de monitoramento",
+      "C": "Ação cautelar",
+      "D": "Ação de execução"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 40,
+    "pergunta": "Quantos ministros compõem o STJ?",
+    "alternativas": {
+      "A": "27 ministros",
+      "B": "33 ministros",
+      "C": "35 ministros",
+      "D": "31 ministros"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 41,
+    "pergunta": "O que é ação de consignação em pagamento?",
+    "alternativas": {
+      "A": "Ação para depositar valor devido quando credor se recusa a receber",
+      "B": "Ação para cobrar dívida",
+      "C": "Ação para anular pagamento",
+      "D": "Ação para restituir valor"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 42,
+    "pergunta": "Qual é o prazo para propor ação anulatória de casamento?",
+    "alternativas": {
+      "A": "1 ano",
+      "B": "2 anos",
+      "C": "3 anos",
+      "D": "4 anos"
+    },
+    "correta": "D",
+    "nivel": "médio"
+  },
+  {
+    "id": 43,
+    "pergunta": "O que é crime continuado?",
+    "alternativas": {
+      "A": "Crime que se prolonga no tempo",
+      "B": "Vários crimes da mesma espécie",
+      "C": "Crime permanente",
+      "D": "Crime habitual"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 44,
+    "pergunta": "Qual é a idade mínima para ser eleito Vereador?",
+    "alternativas": {
+      "A": "18 anos",
+      "B": "21 anos",
+      "C": "25 anos",
+      "D": "30 anos"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 45,
+    "pergunta": "O que é ação de investigação de paternidade?",
+    "alternativas": {
+      "A": "Ação para estabelecer vínculo paterno-filial",
+      "B": "Ação para adoção",
+      "C": "Ação para guarda",
+      "D": "Ação para tutela"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 46,
+    "pergunta": "Qual é o prazo para contestar execução fiscal?",
+    "alternativas": {
+      "A": "15 dias",
+      "B": "30 dias",
+      "C": "45 dias",
+      "D": "60 dias"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 47,
+    "pergunta": "O que significa a sigla ADI?",
+    "alternativas": {
+      "A": "Ação Direta de Inconstitucionalidade",
+      "B": "Ação de Defesa Individual",
+      "C": "Arguição Direta de Inconstitucionalidade",
+      "D": "Ação Declaratória de Inconstitucionalidade"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 48,
+    "pergunta": "Qual é o prazo de decadência para anular ato jurídico por vício de vontade?",
+    "alternativas": {
+      "A": "2 anos",
+      "B": "3 anos",
+      "C": "4 anos",
+      "D": "5 anos"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 49,
+    "pergunta": "O que é ação de usucapião?",
+    "alternativas": {
+      "A": "Ação para aquisição de propriedade pelo uso",
+      "B": "Ação para venda de imóvel",
+      "C": "Ação para locação",
+      "D": "Ação para financiamento"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 50,
+    "pergunta": "Quantos anos dura o mandato do Presidente da República?",
+    "alternativas": {
+      "A": "4 anos",
+      "B": "5 anos",
+      "C": "6 anos",
+      "D": "8 anos"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  }
+]

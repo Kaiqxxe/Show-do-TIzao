@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 
 const AudioManager = () => {
-  const audioRef = useRef(null);
+
 
   const playSound = useCallback((type, perguntaId, isMuted = false) => {
     if (isMuted) return;
@@ -30,7 +30,20 @@ const AudioManager = () => {
     
     if (audioFile) {
       const audio = new Audio(audioFile);
-      audio.play().catch(e => console.log('Erro ao reproduzir áudio:', e));
+      audio.preload = 'auto';
+      audio.volume = 0.8;
+      
+      audio.addEventListener('loadstart', () => {
+        console.log(`Carregando áudio: ${audioFile}`);
+      });
+      
+      audio.addEventListener('error', (e) => {
+        console.error(`Erro no áudio ${audioFile}:`, e.target.error);
+      });
+      
+      audio.play().catch(e => {
+        console.error('Erro ao reproduzir áudio:', audioFile, e);
+      });
     }
   }, []);
 

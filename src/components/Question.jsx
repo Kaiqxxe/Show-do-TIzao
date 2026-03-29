@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Question = ({ pergunta, onAnswer, selectedAnswer, showConfirm, eliminatedOptions = [] }) => {
+const Question = ({ pergunta, onAnswer, selectedAnswer, showConfirm, eliminatedOptions = [], showCorrectAnswer = false }) => {
   const alternativas = ['A', 'B', 'C', 'D'];
 
   return (
@@ -19,17 +19,32 @@ const Question = ({ pergunta, onAnswer, selectedAnswer, showConfirm, eliminatedO
           <button
             key={letra}
             onClick={() => onAnswer(letra)}
-            disabled={showConfirm || eliminatedOptions.includes(letra)}
-            className={`p-6 text-left rounded-xl border transition-all duration-200 ${
+            disabled={eliminatedOptions.includes(letra)}
+            className={`relative p-6 text-left rounded-xl border overflow-hidden button-smooth ${
               eliminatedOptions.includes(letra)
                 ? 'bg-red-50 border-red-200 text-red-400 opacity-60 cursor-not-allowed line-through'
+                : showCorrectAnswer && letra === pergunta.correta
+                ? 'bg-green-500 border-green-500 text-white font-semibold shadow-lg animate-pulse'
                 : selectedAnswer === letra
-                ? 'bg-red-600 border-red-600 text-white font-semibold shadow-lg transform scale-105'
-                : 'bg-white border-gray-200 hover:bg-gray-50 hover:border-blue-600 hover:shadow-md btn-professional'
-            } ${showConfirm ? 'cursor-not-allowed opacity-75' : 'cursor-pointer'}`}
+                ? 'bg-red-600 border-red-600 text-white font-semibold shadow-xl transform scale-102'
+                : 'bg-white border-gray-200 hover:bg-gray-50 hover:border-blue-600 hover:shadow-md hover:scale-102 btn-professional'
+            } cursor-pointer`}
           >
-            <span className="inline-flex items-center justify-center w-8 h-8 bg-blue-600 text-white font-bold rounded-full mr-4 text-sm">{letra}</span>
-            {pergunta.alternativas[letra]}
+            {selectedAnswer === letra && (
+              <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-600 animate-fill-smooth" />
+            )}
+            <div className="relative z-10 flex items-center">
+              <span className={`inline-flex items-center justify-center w-8 h-8 font-bold rounded-full mr-4 text-sm transition-all duration-500 ${
+                selectedAnswer === letra 
+                  ? 'bg-white text-red-600 shadow-md transform scale-110' 
+                  : 'bg-blue-600 text-white'
+              }`}>{letra}</span>
+              <span className={`transition-all duration-300 ${
+                selectedAnswer === letra ? 'font-semibold' : ''
+              }`}>
+                {pergunta.alternativas[letra]}
+              </span>
+            </div>
           </button>
         ))}
       </div>
@@ -41,6 +56,17 @@ const Question = ({ pergunta, onAnswer, selectedAnswer, showConfirm, eliminatedO
           </p>
           <p className="text-lg text-gray-700 font-medium">
             {pergunta.alternativas[selectedAnswer]}
+          </p>
+        </div>
+      )}
+      
+      {showCorrectAnswer && (
+        <div className="text-center bg-green-50 rounded-xl p-6 border border-green-200 mt-4">
+          <p className="text-xl mb-3 text-gray-800">
+            A resposta correta era: <span className="font-bold text-green-600">{pergunta.correta}</span>
+          </p>
+          <p className="text-lg text-gray-700 font-medium">
+            {pergunta.alternativas[pergunta.correta]}
           </p>
         </div>
       )}

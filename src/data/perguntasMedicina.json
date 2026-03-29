@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Qual é o nome do osso mais longo do corpo humano?",
+    "alternativas": {
+      "A": "Tíbia",
+      "B": "Úmero",
+      "C": "Fêmur",
+      "D": "Rádio"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 2,
+    "pergunta": "Quantas câmaras tem o coração humano?",
+    "alternativas": {
+      "A": "4 câmaras",
+      "B": "2 câmaras",
+      "C": "3 câmaras",
+      "D": "5 câmaras"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 3,
+    "pergunta": "Qual é a função principal dos rins?",
+    "alternativas": {
+      "A": "Produzir hormônios",
+      "B": "Filtrar o sangue e produzir urina",
+      "C": "Digerir alimentos",
+      "D": "Bombear sangue"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 4,
+    "pergunta": "Qual é o maior órgão do corpo humano?",
+    "alternativas": {
+      "A": "Fígado",
+      "B": "Pulmão",
+      "C": "Pele",
+      "D": "Cérebro"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 5,
+    "pergunta": "Qual é a pressão arterial normal em adultos?",
+    "alternativas": {
+      "A": "120/80 mmHg",
+      "B": "140/90 mmHg",
+      "C": "110/70 mmHg",
+      "D": "130/85 mmHg"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 6,
+    "pergunta": "Qual é o nome da proteína responsável pelo transporte de oxigênio no sangue?",
+    "alternativas": {
+      "A": "Albumina",
+      "B": "Hemoglobina",
+      "C": "Fibrinogênio",
+      "D": "Globulina"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 7,
+    "pergunta": "Quantos pares de costelas tem o ser humano?",
+    "alternativas": {
+      "A": "10 pares",
+      "B": "11 pares",
+      "C": "12 pares",
+      "D": "13 pares"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 8,
+    "pergunta": "Qual é o nome do hormônio produzido pelo pâncreas que regula a glicose?",
+    "alternativas": {
+      "A": "Cortisol",
+      "B": "Adrenalina",
+      "C": "Tiroxina",
+      "D": "Insulina"
+    },
+    "correta": "D",
+    "nivel": "médio"
+  },
+  {
+    "id": 9,
+    "pergunta": "Qual é a função principal do fígado?",
+    "alternativas": {
+      "A": "Desintoxicação e metabolismo",
+      "B": "Produção de urina",
+      "C": "Digestão de gorduras",
+      "D": "Regulação da temperatura"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 10,
+    "pergunta": "Qual é o nome da membrana que envolve o coração?",
+    "alternativas": {
+      "A": "Pleura",
+      "B": "Pericárdio",
+      "C": "Peritônio",
+      "D": "Meninges"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 11,
+    "pergunta": "Quantos dentes tem um adulto completo?",
+    "alternativas": {
+      "A": "28 dentes",
+      "B": "30 dentes",
+      "C": "32 dentes",
+      "D": "34 dentes"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 12,
+    "pergunta": "Qual é o nome do processo de formação das células sanguíneas?",
+    "alternativas": {
+      "A": "Hematopoiese",
+      "B": "Hemólise",
+      "C": "Hemostasia",
+      "D": "Hematúria"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 13,
+    "pergunta": "Qual é a função principal dos leucócitos?",
+    "alternativas": {
+      "A": "Transporte de oxigênio",
+      "B": "Coagulação sanguínea",
+      "C": "Defesa do organismo",
+      "D": "Regulação hormonal"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 14,
+    "pergunta": "Qual é o nome da artéria principal que sai do coração?",
+    "alternativas": {
+      "A": "Aorta",
+      "B": "Carótida",
+      "C": "Pulmonar",
+      "D": "Coronária"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 15,
+    "pergunta": "Qual é a temperatura corporal normal do ser humano?",
+    "alternativas": {
+      "A": "35°C",
+      "B": "36°C",
+      "C": "37°C",
+      "D": "38°C"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 16,
+    "pergunta": "Qual é o nome do músculo principal da respiração?",
+    "alternativas": {
+      "A": "Intercostal",
+      "B": "Diafragma",
+      "C": "Peitoral",
+      "D": "Abdominal"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 17,
+    "pergunta": "Quantas vértebras tem a coluna vertebral humana?",
+    "alternativas": {
+      "A": "31 vértebras",
+      "B": "32 vértebras",
+      "C": "33 vértebras",
+      "D": "34 vértebras"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 18,
+    "pergunta": "Qual é a função das plaquetas?",
+    "alternativas": {
+      "A": "Coagulação sanguínea",
+      "B": "Transporte de oxigênio",
+      "C": "Defesa imunológica",
+      "D": "Regulação hormonal"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 19,
+    "pergunta": "Qual é o nome da doença causada pela deficiência de vitamina C?",
+    "alternativas": {
+      "A": "Raquitismo",
+      "B": "Escorbuto",
+      "C": "Beribéri",
+      "D": "Pelagra"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 20,
+    "pergunta": "Qual é a frequência cardíaca normal em repouso?",
+    "alternativas": {
+      "A": "50-70 bpm",
+      "B": "60-100 bpm",
+      "C": "80-120 bpm",
+      "D": "100-140 bpm"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 21,
+    "pergunta": "Qual é o nome do hormônio do crescimento?",
+    "alternativas": {
+      "A": "GH (Growth Hormone)",
+      "B": "TSH",
+      "C": "ACTH",
+      "D": "FSH"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 22,
+    "pergunta": "Quantos litros de sangue circulam no corpo humano adulto?",
+    "alternativas": {
+      "A": "3-4 litros",
+      "B": "5-6 litros",
+      "C": "7-8 litros",
+      "D": "9-10 litros"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 23,
+    "pergunta": "Qual é a função principal do baço?",
+    "alternativas": {
+      "A": "Produção de bile",
+      "B": "Filtração do sangue e reserva de sangue",
+      "C": "Digestão de proteínas",
+      "D": "Regulação da temperatura"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 24,
+    "pergunta": "Qual é o nome da membrana que reveste os pulmões?",
+    "alternativas": {
+      "A": "Pericárdio",
+      "B": "Peritônio",
+      "C": "Pleura",
+      "D": "Meninges"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 25,
+    "pergunta": "Qual é a função principal da medula óssea?",
+    "alternativas": {
+      "A": "Produção de células sanguíneas",
+      "B": "Armazenamento de cálcio",
+      "C": "Sustentação do corpo",
+      "D": "Proteção de órgãos"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 26,
+    "pergunta": "Qual é o nome da vitamina produzida pela pele com exposição solar?",
+    "alternativas": {
+      "A": "Vitamina A",
+      "B": "Vitamina D",
+      "C": "Vitamina E",
+      "D": "Vitamina K"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 27,
+    "pergunta": "Quantos músculos tem aproximadamente o corpo humano?",
+    "alternativas": {
+      "A": "400 músculos",
+      "B": "500 músculos",
+      "C": "600 músculos",
+      "D": "700 músculos"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 28,
+    "pergunta": "Qual é a função principal da vesícula biliar?",
+    "alternativas": {
+      "A": "Produzir bile",
+      "B": "Armazenar bile",
+      "C": "Filtrar sangue",
+      "D": "Produzir enzimas"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 29,
+    "pergunta": "Qual é o nome do processo de divisão celular normal?",
+    "alternativas": {
+      "A": "Meiose",
+      "B": "Mitose",
+      "C": "Fagocitose",
+      "D": "Pinocitose"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 30,
+    "pergunta": "Qual é a capacidade pulmonar total aproximada?",
+    "alternativas": {
+      "A": "4 litros",
+      "B": "5 litros",
+      "C": "6 litros",
+      "D": "7 litros"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 31,
+    "pergunta": "Qual é o nome da doença causada pela falta de insulina?",
+    "alternativas": {
+      "A": "Diabetes",
+      "B": "Hipertensão",
+      "C": "Hipotireoidismo",
+      "D": "Anemia"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 32,
+    "pergunta": "Quantos cromossomos tem uma célula humana normal?",
+    "alternativas": {
+      "A": "44 cromossomos",
+      "B": "46 cromossomos",
+      "C": "48 cromossomos",
+      "D": "50 cromossomos"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 33,
+    "pergunta": "Qual é a função principal do cerebelo?",
+    "alternativas": {
+      "A": "Coordenação e equilíbrio",
+      "B": "Memória",
+      "C": "Visão",
+      "D": "Audição"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 34,
+    "pergunta": "Qual é o nome da articulação do joelho?",
+    "alternativas": {
+      "A": "Sinovial",
+      "B": "Cartilaginosa",
+      "C": "Fibrosa",
+      "D": "Móvel"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 35,
+    "pergunta": "Qual é a função principal da tireoide?",
+    "alternativas": {
+      "A": "Regulação do metabolismo",
+      "B": "Produção de insulina",
+      "C": "Filtração do sangue",
+      "D": "Digestão"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 36,
+    "pergunta": "Qual é o nome do líquido que lubrifica as articulações?",
+    "alternativas": {
+      "A": "Líquido cefalorraquidiano",
+      "B": "Líquido sinovial",
+      "C": "Linfa",
+      "D": "Plasma"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 37,
+    "pergunta": "Quantos pares de nervos cranianos existem?",
+    "alternativas": {
+      "A": "10 pares",
+      "B": "11 pares",
+      "C": "12 pares",
+      "D": "13 pares"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 38,
+    "pergunta": "Qual é a função principal dos anticorpos?",
+    "alternativas": {
+      "A": "Defesa contra infecções",
+      "B": "Transporte de oxigênio",
+      "C": "Coagulação",
+      "D": "Digestão"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 39,
+    "pergunta": "Qual é o nome da membrana que envolve o cérebro?",
+    "alternativas": {
+      "A": "Pleura",
+      "B": "Meninges",
+      "C": "Pericárdio",
+      "D": "Peritônio"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 40,
+    "pergunta": "Qual é a duração média do ciclo menstrual?",
+    "alternativas": {
+      "A": "21 dias",
+      "B": "25 dias",
+      "C": "28 dias",
+      "D": "35 dias"
+    },
+    "correta": "C",
+    "nivel": "fácil"
+  },
+  {
+    "id": 41,
+    "pergunta": "Qual é o nome do processo de formação da urina?",
+    "alternativas": {
+      "A": "Filtração glomerular",
+      "B": "Hemodiálise",
+      "C": "Osmose",
+      "D": "Difusão"
+    },
+    "correta": "A",
+    "nivel": "médio"
+  },
+  {
+    "id": 42,
+    "pergunta": "Quantas câmaras tem o estômago humano?",
+    "alternativas": {
+      "A": "1 câmara",
+      "B": "2 câmaras",
+      "C": "3 câmaras",
+      "D": "4 câmaras"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 43,
+    "pergunta": "Qual é a função principal da hemoglobina?",
+    "alternativas": {
+      "A": "Coagulação",
+      "B": "Transporte de oxigênio",
+      "C": "Defesa imunológica",
+      "D": "Digestão"
+    },
+    "correta": "B",
+    "nivel": "fácil"
+  },
+  {
+    "id": 44,
+    "pergunta": "Qual é o nome da doença causada pela deficiência de ferro?",
+    "alternativas": {
+      "A": "Leucemia",
+      "B": "Hemofilia",
+      "C": "Anemia ferropriva",
+      "D": "Talassemia"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 45,
+    "pergunta": "Qual é a função principal do pâncreas endócrino?",
+    "alternativas": {
+      "A": "Produção de enzimas digestivas",
+      "B": "Regulação da glicose sanguínea",
+      "C": "Filtração do sangue",
+      "D": "Produção de bile"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 46,
+    "pergunta": "Qual é o nome da proteína mais abundante no corpo humano?",
+    "alternativas": {
+      "A": "Hemoglobina",
+      "B": "Albumina",
+      "C": "Colágeno",
+      "D": "Queratina"
+    },
+    "correta": "C",
+    "nivel": "médio"
+  },
+  {
+    "id": 47,
+    "pergunta": "Quantos litros de ar respiramos por minuto em repouso?",
+    "alternativas": {
+      "A": "3-5 litros",
+      "B": "5-8 litros",
+      "C": "8-12 litros",
+      "D": "12-15 litros"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 48,
+    "pergunta": "Qual é a função principal da adrenalina?",
+    "alternativas": {
+      "A": "Digestão",
+      "B": "Resposta ao estresse",
+      "C": "Regulação do sono",
+      "D": "Crescimento"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  },
+  {
+    "id": 49,
+    "pergunta": "Qual é o nome da célula responsável pela transmissão nervosa?",
+    "alternativas": {
+      "A": "Neurônio",
+      "B": "Leucócito",
+      "C": "Eritrócito",
+      "D": "Plaqueta"
+    },
+    "correta": "A",
+    "nivel": "fácil"
+  },
+  {
+    "id": 50,
+    "pergunta": "Qual é a função principal do sistema linfático?",
+    "alternativas": {
+      "A": "Circulação sanguínea",
+      "B": "Defesa imunológica e drenagem",
+      "C": "Digestão",
+      "D": "Respiração"
+    },
+    "correta": "B",
+    "nivel": "médio"
+  }
+]
